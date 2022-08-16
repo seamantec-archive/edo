@@ -1,0 +1,14 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    hpricot (0.8.6)
+    libxml-ruby (2.6.0)
+    rubyzip (0.9.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  hpricot
+  libxml-ruby
+  rubyzip

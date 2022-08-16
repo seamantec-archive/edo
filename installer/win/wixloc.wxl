@@ -1,0 +1,3 @@
+   <WixLocalization Culture="en-US" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+        <String Id="ProgressDlgTitleInstalling"></String>
+    </WixLocalization>

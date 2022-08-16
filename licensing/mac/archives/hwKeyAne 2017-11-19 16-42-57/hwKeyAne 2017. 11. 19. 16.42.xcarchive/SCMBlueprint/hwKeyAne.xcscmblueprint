@@ -1,0 +1,26 @@
+{
+  "DVTSourceControlWorkspaceBlueprintLocationsKey" : {
+    "390E0419BEA93F4FF443353B964E8564BC6B1056" : {
+      "DVTSourceControlBranchIdentifierKey" : "release\/1.1.8-sdk-update",
+      "DVTSourceControlLocationRevisionKey" : "69aa1b51b1c5c260b524d14ff7e73b10d5c2806e",
+      "DVTSourceControlBranchOptionsKey" : 4,
+      "DVTSourceControlBranchRemoteNameKey" : "origin",
+      "DVTSourceControlWorkspaceBlueprintLocationTypeKey" : "DVTSourceControlBranch"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "390E0419BEA93F4FF443353B964E8564BC6B1056",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "221B94CD-13A8-4FFD-BA56-8AD51650D178",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "390E0419BEA93F4FF443353B964E8564BC6B1056" : "edo_desktop\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "hwKeyAne",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "licensing\/mac\/hwKeyAne_universal\/hwKeyAne.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/pepusz@bitbucket.org\/seamantec\/sailing.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "390E0419BEA93F4FF443353B964E8564BC6B1056"
+    }
+  ]
+}

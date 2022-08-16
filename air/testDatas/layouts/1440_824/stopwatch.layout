@@ -1,0 +1,17 @@
+<layout>
+  <controll>
+    <x>747</x>
+    <y>100</y>
+    <type>SpeedVessel</type>
+    <w>400</w>
+    <h>394</h>
+  </controll>
+  <controll>
+    <x>239</x>
+    <y>103</y>
+    <type>Heading</type>
+    <w>400</w>
+    <h>400</h>
+  </controll>
+ 
+</layout>

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+ACOMPC="/Users/pepusz/dev/4.6.0_air_3_6/bin/acompc"
+ADT="/Users/pepusz/dev/4.6.0_air_3_6/bin/adt"
+
+SWFVERSION=14
+
+INCLUDE_CLASSES="com.seamantec.hwKeyAne.HwKeyAne"
+NAME="HwKeyANE"
+
+echo "GENERATING SWC"
+$ACOMPC -source-path src/ -include-classes $INCLUDE_CLASSES -swf-version=$SWFVERSION -output $NAME.swc
+sleep 3
+
+echo "GENERATING LIBRARY from SWC"
+unzip $NAME.swc
+sleep 2
+[[ -f "catalog.xml" ]] && rm -f "catalog.xml"
+
+echo "GENERATING ANE"
+$ADT -package -target ane HwKeyAne.ane descriptor.xml -swc $NAME.swc -platform MacOS-x86 HwKeyAne.ane library.swf hwKeyAne.framework
+sleep 2
+[[ -f "library.swf" ]] && rm -f "library.swf"
+
+echo "DONE!"

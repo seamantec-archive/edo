@@ -1,0 +1,29 @@
+<layout>
+  <bg>true</bg>
+  <width>1440</width>
+  <height>824</height>
+  <control>
+    <x>30</x>
+    <y>30</y>
+    <type>./libs/instruments/mwv_app_angle.swc</type>
+    <w>100</w>
+    <h>100</h>
+    <actualState>analog_apparentw_nincszoom</actualState>
+  </control>
+  <control>
+    <x>230</x>
+    <y>200</y>
+    <type>./libs/instruments/stripe_compass.swc</type>
+    <w>820</w>
+    <h>52</h>
+    <actualState/>
+  </control>
+  <control>
+    <x>150</x>
+    <y>100</y>
+    <type>./libs/instruments/digilec_allo.swc</type>
+    <w>75</w>
+    <h>400</h>
+    <actualState/>
+  </control>
+</layout>

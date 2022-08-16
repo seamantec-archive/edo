@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3CCAB05A-3913-4183-B64B-83A363AEFE52</string>
+	<key>IDESourceControlProjectName</key>
+	<string>hwKeyAne</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>390E0419BEA93F4FF443353B964E8564BC6B1056</key>
+		<string>https://github.com/pepusz/sailing.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>licensing/mac/hwKeyAne/hwKeyAne.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>390E0419BEA93F4FF443353B964E8564BC6B1056</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pepusz/sailing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>390E0419BEA93F4FF443353B964E8564BC6B1056</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>390E0419BEA93F4FF443353B964E8564BC6B1056</string>
+			<key>IDESourceControlWCCName</key>
+			<string>src</string>
+		</dict>
+	</array>
+</dict>
+</plist>

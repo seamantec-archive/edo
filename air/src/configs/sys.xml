@@ -1,0 +1,20 @@
+<config>
+	<alarmThresholds>
+		<!--<depth>-->
+			<!--<meter>-->
+				<!--<high><![CDATA[<2:0.2;<10:0.5;<20:1;<40:5;>=40:10]]></high>-->
+				<!--<medium><![CDATA[<20:3;<40:6;>=40:10]]></medium>-->
+				<!--<low><![CDATA[<40:5;>=40:10]]></low>-->
+			<!--</meter>-->
+			<!--<feet>-->
+				<!--<high><![CDATA[<2:0.1;<10:0.5;<20:1;<40:5;>=40:10]]></high>-->
+				<!--<medium><![CDATA[<20:1;<40:5;>=40:10]]></medium>-->
+				<!--<low><![CDATA[<40:5;>=40:10]]></low>-->
+			<!--</feet>-->
+		<!--</depth>-->
+	</alarmThresholds>
+	<alarmSpeeches>
+		<!--<_wind_speed_is_>/Users/seamantec/sailing/air/assets/speech/wind_speed_is_.mp3</_wind_speed_is_>-->
+		<!--<_water_depth_is_>/Users/pepusz/Desktop/sounds/water_depth.mp3</_water_depth_is_>-->
+	</alarmSpeeches>
+</config>

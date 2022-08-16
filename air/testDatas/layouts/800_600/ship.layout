@@ -1,0 +1,24 @@
+<layout>
+  <bg>true</bg>
+  <controll>
+    <x>817</x>
+    <y>28</y>
+    <type>app:/instruments/speed_vessel.swc</type>
+    <w>400</w>
+    <h>394</h>
+  </controll>
+  <controll>
+    <x>418</x>
+    <y>29</y>
+    <type>app:/instruments/Tacticomp.swc</type>
+    <w>400</w>
+    <h>400</h>
+  </controll>
+  <controll>
+    <x>20</x>
+    <y>29</y>
+    <type>app:/instruments/hdg_heading.swc</type>
+    <w>400</w>
+    <h>400</h>
+  </controll>
+</layout>

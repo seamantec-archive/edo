@@ -1,0 +1,53 @@
+.DS_Store
+/air/bin-debug
+/air/.actionScriptProperties
+/air/.flexProperties
+/air/.project
+/air/.settings
+/air/.DS_Store
+/air/src/.actionScriptProperties
+/air/src/.flexProperties
+/air/src/.project
+/air/src/.settings
+/air/src/.DS_Store
+/air/src/bin-debug
+
+bin-debug
+/air/src/workerswfs/*.swf
+/air/workerswfs/*.swf
+/air/workerswfs/com/workers/*.swf
+.idea
+*.iml
+.DS_Store
+*.swp
+*.iml
+.idea
+air/comcConfig.xml
+air/build.properties
+air/scripts/temp
+test_socket_simulator/socket_simulator_server.rb
+
+installer/mac/Edo instruments/Edo instruments.app/*
+installer/mac/Edo instruments.app
+
+installer/win/*.msi
+Log 2010-07-09 210914.txt
+licensing/win/hwKeyAne/hwKeyAne.opensdf
+licensing/win/hwKeyAne/hwKeyAne/Release/
+licensing/win/hwKeyAne/hwKeyAne.sdf
+licensing/win/hwKeyAne/Release/
+licensing/win/hwKeyAne/hwKeyAne.v12.suo
+licensing/win/hwKeyAne/Debug/
+licensing/win/hwKeyAne/hwKeyAne/Debug/
+air/release/
+licensing/mac/dists
+licensing/mac/hwKeyAne/hwKeyAne.xcodeproj
+installer/mac/Edo instruments/EDO instruments.app
+Edo instruments_1_0_1.dmg
+EDO instruments_1_1_0.dmg
+Edo instruments_1_1_1.dmg
+Edo instruments_1_1_2.dmg
+EDO instruments_1_1_4.dmg
+installer/EDO instruments.app
+installer/EDO instruments_1_1_5.dmg
+installer/edoinstaller_1_1_5.msi

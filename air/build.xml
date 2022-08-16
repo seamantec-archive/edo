@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="air_1_1" default="init" basedir=".">
+
+
+    <property file="build.properties"/>
+    <taskdef resource="flexTasks.tasks" classpath="${flex.task}"/>
+
+    <!-- Compiler options -->
+
+    <property name="compiler.debug" value="on"/>
+    <property name="compiler.generate.no.warnings" value="off"/>
+    <property name="compiler.args" value=""/>
+    <property name="compiler.max.memory" value="512m"/>
+
+
+    <patternset id="ignored.files">
+        <exclude name="**/CVS/**"/>
+        <exclude name="**/SCCS/**"/>
+        <exclude name="**/RCS/**"/>
+        <exclude name="**/rcs/**"/>
+        <exclude name="**/.DS_Store/**"/>
+        <exclude name="**/.svn/**"/>
+        <exclude name="**/.pyc/**"/>
+        <exclude name="**/.pyo/**"/>
+        <exclude name="**/*.pyc/**"/>
+        <exclude name="**/*.pyo/**"/>
+        <exclude name="**/.git/**"/>
+        <exclude name="**/*.hprof/**"/>
+        <exclude name="**/_svn/**"/>
+        <exclude name="**/.hg/**"/>
+        <exclude name="**/*.lib/**"/>
+        <exclude name="**/*~/**"/>
+        <exclude name="**/__pycache__/**"/>
+        <exclude name="**/.bundle/**"/>
+        <exclude name="**/vssver.scc/**"/>
+        <exclude name="**/vssver2.scc/**"/>
+        <exclude name="**/*.rbc/**"/>
+    </patternset>
+    <patternset id="library.patterns">
+        <include name="*.war"/>
+        <include name="*.ear"/>
+        <include name="*.apk"/>
+        <include name="*.zip"/>
+        <include name="*.swc"/>
+        <include name="*.ane"/>
+        <include name="*.egg"/>
+        <include name="*.jar"/>
+    </patternset>
+    <patternset id="compiler.resources">
+        <include name="**/?*.properties"/>
+        <include name="**/?*.xml"/>
+        <include name="**/?*.gif"/>
+        <include name="**/?*.png"/>
+        <include name="**/?*.jpeg"/>
+        <include name="**/?*.jpg"/>
+        <include name="**/?*.html"/>
+        <include name="**/?*.dtd"/>
+        <include name="**/?*.tld"/>
+        <include name="**/?*.ftl"/>
+    </patternset>
+
+    <!-- JDK definitions -->
+
+    <property name="project.flex.home" value="${flex_air.sdk}"/>
+    <property name="project.flex.bin" value="${flex_air.bin}"/>
+    <property name="project.flex.classpath" value="flex_air.classpath.4.6.0_air_3_5"/>
+
+
+    <!-- Project Libraries -->
+
+
+    <!-- Modules -->
+    <property name="MXMLC.JAR" value="${flex_air.sdk}/lib/mxmlc-cli.jar"/>
+
+    <target name="test1">
+        <java jar="${MXMLC.JAR}" fork="true">
+            <arg value="-debug=true"/>
+            <arg value="-load-config=./comcConfig.xml"/>
+            <arg value="+configname=air"/>
+            <arg value="-source-path=${basedir}/src/"/>
+            <arg value="-file-specs=${src.dir}/com/workers/NmeaLogReader.as"/>
+            <arg value="-output=${workers.dir}/PolarWorker.swf"/>
+        </java>
+    </target>
+
+    <target name="init" description="Build initialization">
+        <!-- Perform any build initialization in this target -->
+        <tstamp/>
+        <echo message="============================================="/>
+        <echo message="${project.name}-${project.version} [${TODAY}]"/>
+        <echo message="Copyright (c) ${project.year} "/>
+        <echo message="OS : ${os.name}"/>
+        <echo message="Author: "/>
+        <echo message="=============================================="/>
+    </target>
+
+    <!-- Clean output dirs -->
+    <target name="clean" description="clean all generated files">
+        <delete includeemptydirs="true">
+            <fileset dir="${bin.dir}" includes="**/*"/>
+        </delete>
+    </target>
+
+    <target name="checkforNmeaWorkerchanges">
+        <uptodate property="nmeaWorkerChanged" srcfile="${src.dir}/com/workers/NmeaLogReader.as"
+                  targetfile="${workers.dir}/NmeaLogReader.swf"/>
+    </target>
+    <target name="checkforPolarWorkerchanges">
+        <uptodate property="polarWorkerChanged" srcfile="src/com/workers/PolarWorker.as"
+                  targetfile="${workers.dir}/PolarWorker.swf"/>
+    </target>
+    <target name="checkforParserWorkerchanges">
+
+        <uptodate property="parsersWorkerChanged" srcfile="${src.dir}/com/workers/ParserWorker.as"
+                  targetfile="${workers.dir}/ParserWorker.swf"/>
+    </target>
+    <target name="checkforZoomLevelWorkerchanges">
+        <uptodate property="zoomLevelWorkerChanged" srcfile="${src.dir}/com/workers/ZoomLevelCalulator.as"
+                  targetfile="${workers.dir}/ZoomLevelCalulator.swf"/>
+    </target>
+
+    <!--<target name="buildNmeaWorker" depends="checkforNmeaWorkerchanges" unless="nmeaWorkerChanged">-->
+    <!--<compc output="${workers.dir}/NmeaLogReader.swf" include-classes="com.workers.NmeaLogReader">-->
+    <!--<source-path path-element="${basedir}/src/"/>-->
+    <!--<swf-version>18</swf-version>-->
+    <!--<load-config filename="./comcConfig.xml"/>-->
+    <!--<external-library-path file="${FLEX_HOME}/frameworks/libs/air/airglobal.swc" append="false"/>-->
+    <!--</compc>-->
+    <!--</target>-->
+    <!--depends="checkforNmeaWorkerchanges" unless="nmeaWorkerChanged"-->
+    <target name="buildNmeaWorker" depends="checkforNmeaWorkerchanges" unless="nmeaWorkerChanged">
+        <mxmlc output="${workers.dir}/NmeaLogReader.swf" file="${src.dir}/com/workers/NmeaLogReader.as"
+               actionscript-file-encoding="utf-8">
+            <source-path path-element="${basedir}/src/"/>
+            <swf-version>29</swf-version>
+            <load-config filename="./comcConfig.xml"/>
+            <external-library-path file="${FLEX_HOME}/frameworks/libs/air/airglobal.swc" append="false"/>
+        </mxmlc>
+    </target>
+    <!---->
+    <target name="buildPolarWorker" depends="checkforPolarWorkerchanges" unless="polarWorkerChanged">
+        <mxmlc output="${workers.dir}/PolarWorker.swf" file="${src.dir}/com/workers/PolarWorker.as"
+               actionscript-file-encoding="utf-8">
+            <source-path path-element="${basedir}/src/"/>
+            <swf-version>29</swf-version>
+            <load-config filename="./comcConfig.xml"/>
+            <external-library-path file="${FLEX_HOME}/frameworks/libs/air/airglobal.swc" append="false"/>
+        </mxmlc>
+    </target>
+
+    <target name="buildParserWorker" depends="checkforParserWorkerchanges" unless="parsersWorkerChanged">
+        <mxmlc output="${workers.dir}/ParserWorker.swf" file="${src.dir}/com/workers/ParserWorker.as"
+               actionscript-file-encoding="utf-8">
+            <source-path path-element="${basedir}/src/"/>
+            <swf-version>29</swf-version>
+            <load-config filename="./comcConfig.xml"/>
+            <external-library-path file="${FLEX_HOME}/frameworks/libs/air/airglobal.swc" append="false"/>
+        </mxmlc>
+    </target>
+    <!--<target name="buildZoomLevel" depends="checkforZoomLevelWorkerchanges" unless="zoomLevelWorkerChanged">-->
+
+    <!--<mxmlc output="${workers.dir}/ZoomLevelCalulator.swf" file="${src.dir}/com/workers/ZoomLevelCalulator.as"  actionscript-file-encoding="utf-8" >-->
+    <!--<source-path path-element="${basedir}/src/"/>-->
+    <!--<swf-version>18</swf-version>-->
+    <!--<load-config filename="./comcConfig.xml"/>-->
+    <!--<external-library-path file="${FLEX_HOME}/frameworks/libs/air/airglobal.swc" append="false"/>-->
+    <!--</mxmlc>-->
+    <!--</target>-->
+    <target name="buildWorkers" depends="buildNmeaWorker, buildParserWorker, buildPolarWorker">
+
+    </target>
+
+    <target name="buildAllWorker">
+        <mxmlc output="${workers.dir}/PolarWorker.swf" file="${src.dir}/com/workers/PolarWorker.as"
+               actionscript-file-encoding="utf-8">
+            <source-path path-element="${basedir}/src/"/>
+            <swf-version>29</swf-version>
+            <load-config filename="./comcConfig.xml"/>
+            <external-library-path file="${FLEX_HOME}/frameworks/libs/air/airglobal.swc" append="false"/>
+        </mxmlc>
+
+        <mxmlc output="${workers.dir}/NmeaLogReader.swf" file="${src.dir}/com/workers/NmeaLogReader.as"
+               actionscript-file-encoding="utf-8">
+            <source-path path-element="${basedir}/src/"/>
+            <swf-version>29</swf-version>
+            <load-config filename="./comcConfig.xml"/>
+            <external-library-path file="${FLEX_HOME}/frameworks/libs/air/airglobal.swc" append="false"/>
+        </mxmlc>
+    </target>
+
+    <target name="compile" depends="init" description="Compiles the mxml/as source files">
+        <mxmlc file="${main.class}" output="${swf.export}">
+            <load-config filename="${FLEX_HOME}/frameworks/flex-config.xml"/>
+            <source-path path-element="${FLEX_HOME}/frameworks"/>
+            <compiler.source-path path-element="${src.dir}"/>
+            <compiler.include-libraries dir="${basedir}" append="true">
+                <include name="${lib.dir}"/>
+            </compiler.include-libraries>
+        </mxmlc>
+    </target>
+
+    <target name="generating swc sources ">
+        <exec executable="${rubyPath}">
+            <arg value="scripts/generate_swc_sources.rb"/>
+        </exec>
+    </target>
+
+    <target name="copy_layout_for_tests">
+        <copydir src="testDatas/layouts" dest="${bin.dir}/test/air_1_1/layouts"/>
+    </target>
+    <!--<target name="build.modules" depends="init, clean, compile.module.air_1_1" description="build all modules"/>-->
+    <!---->
+    <!--<target name="all" depends="build.modules" description="build all"/>-->
+</project>

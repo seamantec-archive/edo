@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Flash</ID>
+  <OriginalElement>air_1_1:components.graph.GraphInstanceAs</OriginalElement>
+  <nodes>
+    <node x="1261.7968096329173" y="1749.2602168882445">air_1_1:com.timeline.LogDataHandler</node>
+    <node x="19.288176758753252" y="-104.15615449726789">air_1_1:com.graphs.GraphScroller</node>
+    <node x="2753.8175499574227" y="272.8297629374322">air_1_1:com.loggers.LogRegister</node>
+    <node x="1217.8105852634085" y="-55.93571260038462">air_1_1:com.timeline.ZoomHandler</node>
+    <node x="1110.4002294795623" y="891.5538991106682">air_1_1:com.timeline.Marker</node>
+    <node x="3776.2731254120154" y="234.487678857885">air_1_1:com.workers.NmeaLogReader</node>
+    <node x="135.5374149659865" y="1875.374149659864">air_1_1:com.graphs.GraphHandler</node>
+    <node x="742.2601998127618" y="1669.9064753916462">air_1_1:com.utils.GraphDataHandler</node>
+    <node x="0.0" y="978.0">air_1_1:components.graph.GraphInstanceAs</node>
+    <node x="2652.0904918553415" y="2189.0892408911436">air_1_1:com.timeline.DataParserHandler</node>
+    <node x="-1228.1131078606982" y="788.5598616577151">air_1_1:com.sailing.WindowsHandler</node>
+    <node x="2273.301188007609" y="1145.6530441490072">air_1_1:com.timeline.SmallTimeline</node>
+    <node x="3789.0538201051972" y="675.421645772678">air_1_1:com.workers.ZoomLevelCalulator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="air_1_1:components.graph.GraphInstanceAs" target="air_1_1:com.graphs.GraphHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.workers.ZoomLevelCalulator" target="air_1_1:com.loggers.LogRegister">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.SmallTimeline" target="air_1_1:com.loggers.LogRegister">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.SmallTimeline" target="air_1_1:com.timeline.DataParserHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.SmallTimeline" target="air_1_1:com.timeline.LogDataHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.utils.GraphDataHandler" target="air_1_1:com.loggers.LogRegister">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.graphs.GraphScroller" target="air_1_1:com.timeline.ZoomHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.graphs.GraphHandler" target="air_1_1:components.graph.GraphInstanceAs">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:components.graph.GraphInstanceAs" target="air_1_1:com.graphs.GraphScroller">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.LogDataHandler" target="air_1_1:com.timeline.Marker">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.graphs.GraphHandler" target="air_1_1:com.utils.GraphDataHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.workers.NmeaLogReader" target="air_1_1:com.loggers.LogRegister">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.sailing.WindowsHandler" target="air_1_1:components.graph.GraphInstanceAs">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.SmallTimeline" target="air_1_1:com.timeline.ZoomHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.SmallTimeline" target="air_1_1:com.timeline.Marker">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.graphs.GraphHandler" target="air_1_1:com.graphs.GraphHandler">
+      <point x="0.0" y="0.0" />
+      <point x="367.5374149659865" y="1695.874149659864" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.SmallTimeline" target="air_1_1:com.sailing.WindowsHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.LogDataHandler" target="air_1_1:com.sailing.WindowsHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.ZoomHandler" target="air_1_1:com.loggers.LogRegister">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.graphs.GraphScroller" target="air_1_1:com.graphs.GraphHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.SmallTimeline" target="air_1_1:com.graphs.GraphHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.graphs.GraphScroller" target="air_1_1:com.sailing.WindowsHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.sailing.WindowsHandler" target="air_1_1:com.graphs.GraphHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.loggers.LogRegister" target="air_1_1:com.loggers.LogRegister">
+      <point x="0.0" y="0.0" />
+      <point x="2782.599139990885" y="485.19806643515255" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.DataParserHandler" target="air_1_1:com.timeline.DataParserHandler">
+      <point x="0.0" y="0.0" />
+      <point x="2593.2604110554385" y="2156.509564927258" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.ZoomHandler" target="air_1_1:com.timeline.Marker">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.sailing.WindowsHandler" target="air_1_1:com.sailing.WindowsHandler">
+      <point x="0.0" y="0.0" />
+      <point x="-906.6131078606982" y="521.0598616577151" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:components.graph.GraphInstanceAs" target="air_1_1:com.sailing.WindowsHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.timeline.LogDataHandler" target="air_1_1:com.graphs.GraphHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:components.graph.GraphInstanceAs" target="air_1_1:com.timeline.Marker">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.graphs.GraphScroller" target="air_1_1:components.graph.GraphInstanceAs">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="air_1_1:com.graphs.GraphHandler" target="air_1_1:com.sailing.WindowsHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5184523205627419" x="1312.109300096339" y="1451.376694237858" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>PRIVATE</VISIBILITY>
+</Diagram>
+

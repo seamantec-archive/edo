@@ -1,0 +1,5 @@
+source 'http://rubygems.org'
+
+gem "rubyzip"
+gem "libxml-ruby"
+gem "hpricot"

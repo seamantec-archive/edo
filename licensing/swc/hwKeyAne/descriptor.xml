@@ -1,0 +1,27 @@
+<extension xmlns="http://ns.adobe.com/air/extension/27.0">
+    <id>com.seamantec.hwKeyAne</id>
+    <versionNumber>1</versionNumber>
+    <platforms>
+        <platform name="MacOS-x86">
+            <applicationDeployment>
+                <nativeLibrary>hwKeyAne.framework</nativeLibrary>
+                <initializer>initializer</initializer>
+                <!--<finalizer>finalizer</finalizer>-->
+            </applicationDeployment>
+        </platform>
+        <platform name="MacOS-x86-64">
+            <applicationDeployment>
+                <nativeLibrary>hwKeyAne.framework</nativeLibrary>
+                <initializer>initializer64</initializer>
+                <!--<finalizer>finalizer</finalizer>-->
+            </applicationDeployment>
+        </platform>
+        <platform name="Windows-x86">
+            <applicationDeployment>
+                <nativeLibrary>hwKeyAne.dll</nativeLibrary>
+                <initializer>initializer</initializer>
+                <!--<finalizer>finalizer</finalizer>-->
+            </applicationDeployment>
+        </platform>
+    </platforms>
+</extension>

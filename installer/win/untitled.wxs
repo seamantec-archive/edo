@@ -1,0 +1,1405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Product Id="033D1ED8-3A99-4974-AA50-A2D9189EEE83" Name="TestProduct" Language="1033" Version="0.0.0.1" Manufacturer="WixEdit" UpgradeCode="C44962EE-BB1A-4F35-AAF7-9B9F0341D5C7">
+        <Package Description="Test file in a Product" Comments="Simple test" InstallerVersion="200" Compressed="yes" />
+        <Media Id="1" Cabinet="simple.cab" EmbedCab="yes" />
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder" Name="PFiles" />
+            <Directory Id="AIR" Name="air">
+                <Component Id="AIR.SWF" DiskId="1" Guid="07FB00FD-3B2C-4E42-B9C6-AEF0B3D0F854">
+                    <File Id="AIR.SWF" Name="air.swf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\air.swf" />
+                </Component>
+                <Component Id="EDO_INSTRUMENTS.EXE" DiskId="1" Guid="894B1F38-D4D2-45EF-ADB6-7C01727F27B8">
+                    <File Id="EDO_INSTRUMENTS.EXE" Name="edo_instruments.exe" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\edo_instruments.exe" />
+                </Component>
+                <Component Id="MIMETYPE" DiskId="1" Guid="BE553DEA-A9D0-4458-99BA-A934E9933671">
+                    <File Id="MIMETYPE" Name="mimetype" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\mimetype" />
+                </Component>
+                <Directory Id="ADOBE_AIR" Name="Adobe AIR">
+                    <Directory Id="VERSIONS" Name="Versions">
+                        <Directory Id="_1.0" Name="1.0">
+                            <Component Id="ADOBE_AIR.DLL" DiskId="1" Guid="22F343E3-15B7-41EB-AA05-B06F729C1EAA">
+                                <File Id="ADOBE_AIR.DLL" Name="Adobe AIR.dll" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\Adobe AIR\Versions\1.0\Adobe AIR.dll" />
+                            </Component>
+                            <Directory Id="RESOURCES" Name="Resources">
+                                <Component Id="ADOBE_AIR.VCH" DiskId="1" Guid="F187309C-42F6-40EC-9022-D5013BB18CFE">
+                                    <File Id="ADOBE_AIR.VCH" Name="Adobe AIR.vch" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\Adobe AIR\Versions\1.0\Resources\Adobe AIR.vch" />
+                                </Component>
+                                <Component Id="ADOBECP.DLL" DiskId="1" Guid="6E47CF8F-1F57-4C6A-99A2-445E0151C0FE">
+                                    <File Id="ADOBECP.DLL" Name="adobecp.dll" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\Adobe AIR\Versions\1.0\Resources\adobecp.dll" />
+                                </Component>
+                                <Component Id="ADOBECP.VCH" DiskId="1" Guid="60D6432A-6A7E-49DB-8458-963D8E9DC22A">
+                                    <File Id="ADOBECP.VCH" Name="adobecp.vch" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\Adobe AIR\Versions\1.0\Resources\adobecp.vch" />
+                                </Component>
+                                <Component Id="ADOBECP15.DLL" DiskId="1" Guid="BEE05CD1-C60F-4C64-AFC0-772C4707B1A8">
+                                    <File Id="ADOBECP15.DLL" Name="AdobeCP15.dll" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\Adobe AIR\Versions\1.0\Resources\AdobeCP15.dll" />
+                                </Component>
+                                <Component Id="CAPTIVEAPPENTRY.EXE" DiskId="1" Guid="47BB5F9F-5754-4170-962A-BD432E623848">
+                                    <File Id="CAPTIVEAPPENTRY.EXE" Name="CaptiveAppEntry.exe" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\Adobe AIR\Versions\1.0\Resources\CaptiveAppEntry.exe" />
+                                </Component>
+                                <Component Id="NPSWF32.DLL" DiskId="1" Guid="32CCB46A-A0CA-4DEA-A201-D90E654BBC6B">
+                                    <File Id="NPSWF32.DLL" Name="NPSWF32.dll" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\Adobe AIR\Versions\1.0\Resources\NPSWF32.dll" />
+                                </Component>
+                                <Component Id="WEBKIT.DLL" DiskId="1" Guid="946F4137-8FD8-41DE-8BC2-3A2696975E09">
+                                    <File Id="WEBKIT.DLL" Name="WebKit.dll" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\Adobe AIR\Versions\1.0\Resources\WebKit.dll" />
+                                </Component>
+                                <Directory Id="WEBKIT" Name="WebKit">
+                                    <Component Id="LGPL_LICENSE.TXT" DiskId="1" Guid="A9F35414-5A6C-4E90-91EF-A58BCFE20622">
+                                        <File Id="LGPL_LICENSE.TXT" Name="LGPL License.txt" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\Adobe AIR\Versions\1.0\Resources\WebKit\LGPL License.txt" />
+                                    </Component>
+                                    <Component Id="NOTICE_WEBKIT.TXT" DiskId="1" Guid="C85B183A-C7F2-4786-848F-9F5ABB37411B">
+                                        <File Id="NOTICE_WEBKIT.TXT" Name="Notice WebKit.txt" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\Adobe AIR\Versions\1.0\Resources\WebKit\Notice WebKit.txt" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="ASSETS" Name="assets">
+                    <Component Id="ALERT1___COPY.MP3" DiskId="1" Guid="0B6E6DCF-3131-4BB6-AC18-0EB774D669D2">
+                        <File Id="ALERT1___COPY.MP3" Name="alert1 - Copy.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\alert1 - Copy.mp3" />
+                    </Component>
+                    <Component Id="ALERT1.MP3" DiskId="1" Guid="73412C06-5DCD-40AE-B864-10A7EA25C9A0">
+                        <File Id="ALERT1.MP3" Name="alert1.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\alert1.mp3" />
+                    </Component>
+                    <Component Id="ALERT2.MP3" DiskId="1" Guid="DEFD6827-09E0-4BCF-80C7-784FA8387356">
+                        <File Id="ALERT2.MP3" Name="alert2.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\alert2.mp3" />
+                    </Component>
+                    <Component Id="LOADING.PNG" DiskId="1" Guid="023BF65E-1993-4684-8597-CEE55DA9525C">
+                        <File Id="LOADING.PNG" Name="loading.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\loading.png" />
+                    </Component>
+                    <Directory Id="APP_ICONS" Name="app_icons">
+                        <Component Id="ICON_016.PNG" DiskId="1" Guid="66097924-25FC-483A-9404-E8C556B5D6D8">
+                            <File Id="ICON_016.PNG" Name="icon_016.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\app_icons\icon_016.png" />
+                        </Component>
+                        <Component Id="ICON_032.PNG" DiskId="1" Guid="D20F7CDB-27EC-4772-8A5B-A6769145DC13">
+                            <File Id="ICON_032.PNG" Name="icon_032.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\app_icons\icon_032.png" />
+                        </Component>
+                        <Component Id="ICON_048.PNG" DiskId="1" Guid="A0E20C8D-515A-40C3-9B1B-EB41EE61087D">
+                            <File Id="ICON_048.PNG" Name="icon_048.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\app_icons\icon_048.png" />
+                        </Component>
+                        <Component Id="ICON_128.PNG" DiskId="1" Guid="27E14ABB-D27B-4E23-A8B5-04142223B522">
+                            <File Id="ICON_128.PNG" Name="icon_128.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\app_icons\icon_128.png" />
+                        </Component>
+                        <Component Id="ICON_256.PNG" DiskId="1" Guid="A19BB5A9-7D1A-4FF6-BC89-3CB44DCE39BC">
+                            <File Id="ICON_256.PNG" Name="icon_256.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\app_icons\icon_256.png" />
+                        </Component>
+                        <Component Id="ICON_512.PNG" DiskId="1" Guid="7882C194-24BE-4CBC-97C7-8659BC28BF69">
+                            <File Id="ICON_512.PNG" Name="icon_512.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\app_icons\icon_512.png" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="FONTS" Name="fonts">
+                        <Component Id="AMBLE_BOLD.TTF" DiskId="1" Guid="4C812203-8C45-420B-9CF9-B1F1475D44CC">
+                            <File Id="AMBLE_BOLD.TTF" Name="Amble-Bold.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Amble-Bold.ttf" />
+                        </Component>
+                        <Component Id="AMBLE_BOLDITALIC.TTF" DiskId="1" Guid="33D3AFD6-3DCC-4DA7-AE38-5D40C77C6C3F">
+                            <File Id="AMBLE_BOLDITALIC.TTF" Name="Amble-BoldItalic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Amble-BoldItalic.ttf" />
+                        </Component>
+                        <Component Id="AMBLE_ITALIC.TTF" DiskId="1" Guid="A154DD97-1130-4331-9ED6-C58F1DD547F4">
+                            <File Id="AMBLE_ITALIC.TTF" Name="Amble-Italic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Amble-Italic.ttf" />
+                        </Component>
+                        <Component Id="AMBLE_LIGHT.TTF" DiskId="1" Guid="24491A3B-79B8-4388-BEF3-6EF7775B0847">
+                            <File Id="AMBLE_LIGHT.TTF" Name="Amble-Light.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Amble-Light.ttf" />
+                        </Component>
+                        <Component Id="AMBLE_LIGHTCONDENSED.TTF" DiskId="1" Guid="D2D30FCE-8228-4934-B624-E95E792A6CE0">
+                            <File Id="AMBLE_LIGHTCONDENSED.TTF" Name="Amble-LightCondensed.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Amble-LightCondensed.ttf" />
+                        </Component>
+                        <Component Id="AMBLE_LIGHTCONDENSEDITALIC.TTF" DiskId="1" Guid="30C8F9F3-FDF7-4108-BC7D-7A70B5B51BAC">
+                            <File Id="AMBLE_LIGHTCONDENSEDITALIC.TTF" Name="Amble-LightCondensedItalic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Amble-LightCondensedItalic.ttf" />
+                        </Component>
+                        <Component Id="AMBLE_LIGHTITALIC.TTF" DiskId="1" Guid="962CA8DA-527E-4232-B599-83166EBF1F37">
+                            <File Id="AMBLE_LIGHTITALIC.TTF" Name="Amble-LightItalic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Amble-LightItalic.ttf" />
+                        </Component>
+                        <Component Id="AMBLE_REGULAR.TTF" DiskId="1" Guid="5AC649C7-7C63-4D9E-AB35-25961FA7F300">
+                            <File Id="AMBLE_REGULAR.TTF" Name="Amble-Regular.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Amble-Regular.ttf" />
+                        </Component>
+                        <Component Id="DIGITAL_EDO_PR.TTF" DiskId="1" Guid="43D4FAAB-2C78-401B-A5CD-7DA3BBEB6AF2">
+                            <File Id="DIGITAL_EDO_PR.TTF" Name="digital_edo_pr.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\digital_edo_pr.ttf" />
+                        </Component>
+                        <Component Id="DIGITAL_JANI_ITALIC.TTF" DiskId="1" Guid="AE87B730-A5CA-43D4-90FA-51A3DF1B8EB0">
+                            <File Id="DIGITAL_JANI_ITALIC.TTF" Name="digital_jani Italic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\digital_jani Italic.ttf" />
+                        </Component>
+                        <Component Id="DIGITAL_JANI.TTF" DiskId="1" Guid="0E0B68FB-AC8F-4483-86AB-3ED9E71B3E94">
+                            <File Id="DIGITAL_JANI.TTF" Name="digital_jani.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\digital_jani.ttf" />
+                        </Component>
+                        <Component Id="DIGITAL_JANI1_ITALIC.TTF" DiskId="1" Guid="97B8EC69-3F3D-4E78-A371-6A9F5D2A7F1F">
+                            <File Id="DIGITAL_JANI1_ITALIC.TTF" Name="digital_jani1 Italic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\digital_jani1 Italic.ttf" />
+                        </Component>
+                        <Component Id="DIGITAL_JANI1.TTF" DiskId="1" Guid="2B879825-1D94-4FA5-A1BD-3902365E6B59">
+                            <File Id="DIGITAL_JANI1.TTF" Name="digital_jani1.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\digital_jani1.ttf" />
+                        </Component>
+                        <Component Id="DIGITAL_REGULAR.TTF" DiskId="1" Guid="33599E3F-399E-473E-B614-BA81A7B89F7A">
+                            <File Id="DIGITAL_REGULAR.TTF" Name="digital_regular.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\digital_regular.ttf" />
+                        </Component>
+                        <Component Id="LIBERATIONSANS_BOLD.TTF" DiskId="1" Guid="8EF0A748-0AAA-461A-85FD-E607BC4E1472">
+                            <File Id="LIBERATIONSANS_BOLD.TTF" Name="LiberationSans-Bold.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\LiberationSans-Bold.ttf" />
+                        </Component>
+                        <Component Id="LIBERATIONSANS_BOLDITALIC.TTF" DiskId="1" Guid="51DD40F9-FC4E-4DDF-BD3F-AC72FFA724EF">
+                            <File Id="LIBERATIONSANS_BOLDITALIC.TTF" Name="LiberationSans-BoldItalic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\LiberationSans-BoldItalic.ttf" />
+                        </Component>
+                        <Component Id="LIBERATIONSANS_ITALIC.TTF" DiskId="1" Guid="DFDCCBF3-9742-4553-9583-6F320436C299">
+                            <File Id="LIBERATIONSANS_ITALIC.TTF" Name="LiberationSans-Italic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\LiberationSans-Italic.ttf" />
+                        </Component>
+                        <Component Id="LIBERATIONSANS_REGULAR.TTF" DiskId="1" Guid="21B8A4F7-3C7F-4C0F-B495-EC9A154083CC">
+                            <File Id="LIBERATIONSANS_REGULAR.TTF" Name="LiberationSans-Regular.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\LiberationSans-Regular.ttf" />
+                        </Component>
+                        <Component Id="SANSATION_BOLD.TTF" DiskId="1" Guid="110ED55C-323C-4DEA-8E57-E985255DE91D">
+                            <File Id="SANSATION_BOLD.TTF" Name="Sansation_Bold.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Sansation_Bold.ttf" />
+                        </Component>
+                        <Component Id="SANSATION_BOLD_ITALIC.TTF" DiskId="1" Guid="61BAD429-1834-4835-A50A-8C41B1488415">
+                            <File Id="SANSATION_BOLD_ITALIC.TTF" Name="Sansation_Bold_Italic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Sansation_Bold_Italic.ttf" />
+                        </Component>
+                        <Component Id="SANSATION_ITALIC.TTF" DiskId="1" Guid="F6206E15-1DF2-4285-B9B1-92BBB7C701A1">
+                            <File Id="SANSATION_ITALIC.TTF" Name="Sansation_Italic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Sansation_Italic.ttf" />
+                        </Component>
+                        <Component Id="SANSATION_LIGHT.TTF" DiskId="1" Guid="FF6BEC98-0315-4090-A9E5-80DB347F4955">
+                            <File Id="SANSATION_LIGHT.TTF" Name="Sansation_Light.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Sansation_Light.ttf" />
+                        </Component>
+                        <Component Id="SANSATION_LIGHT_ITALIC.TTF" DiskId="1" Guid="766AE8B6-BA95-432F-B0D2-DB0388EE4042">
+                            <File Id="SANSATION_LIGHT_ITALIC.TTF" Name="Sansation_Light_Italic.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Sansation_Light_Italic.ttf" />
+                        </Component>
+                        <Component Id="SANSATION_REGULAR.TTF" DiskId="1" Guid="7884D0FE-3A77-4447-87B6-1190532D812F">
+                            <File Id="SANSATION_REGULAR.TTF" Name="Sansation_Regular.ttf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fonts\Sansation_Regular.ttf" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="FXES" Name="fxes">
+                        <Component Id="BELL_BUT.MP3" DiskId="1" Guid="3E5CD826-D080-48D0-A050-4979F30BD4D8">
+                            <File Id="BELL_BUT.MP3" Name="bell_but.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fxes\bell_but.mp3" />
+                        </Component>
+                        <Component Id="BELL_BUT2.MP3" DiskId="1" Guid="FAE899C0-9E63-41E7-BACE-A4E06DBA7329">
+                            <File Id="BELL_BUT2.MP3" Name="bell_but2.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fxes\bell_but2.mp3" />
+                        </Component>
+                        <Component Id="DISALERT.MP3" DiskId="1" Guid="C403BFBE-ABF4-4F24-AE44-2476A22AF49F">
+                            <File Id="DISALERT.MP3" Name="disalert.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fxes\disalert.mp3" />
+                        </Component>
+                        <Component Id="IDG_BANG.MP3" DiskId="1" Guid="B66D64DD-D505-4291-9A90-B42E68C3798A">
+                            <File Id="IDG_BANG.MP3" Name="idg-bang.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fxes\idg-bang.mp3" />
+                        </Component>
+                        <Component Id="POISE_XRIKAZEN.MP3" DiskId="1" Guid="0A7B206E-6A36-4A25-BE98-48CF0F1FEB4F">
+                            <File Id="POISE_XRIKAZEN.MP3" Name="poise-xrikazen.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fxes\poise-xrikazen.mp3" />
+                        </Component>
+                        <Component Id="SUBMARIN_BRUCE_NE_7485_HIFI.MP3" DiskId="1" Guid="6496A6F7-FE2A-4A04-9A31-1517CDED0F56">
+                            <File Id="SUBMARIN_BRUCE_NE_7485_HIFI.MP3" Name="submarin-Bruce_Ne-7485_hifi.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fxes\submarin-Bruce_Ne-7485_hifi.mp3" />
+                        </Component>
+                        <Component Id="SUBMARINE.MP3" DiskId="1" Guid="0A8426B4-8BAE-48DF-98E1-762A528CE32B">
+                            <File Id="SUBMARINE.MP3" Name="submarine.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fxes\submarine.mp3" />
+                        </Component>
+                        <Component Id="S_BAINER.MP3" DiskId="1" Guid="A743056D-BC9D-449F-BBF7-9A152EAC43CB">
+                            <File Id="S_BAINER.MP3" Name="s_bainer.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fxes\s_bainer.mp3" />
+                        </Component>
+                        <Component Id="S_BAINER2.MP3" DiskId="1" Guid="BF3308C6-46F2-4CDA-AF74-11CF241A05A2">
+                            <File Id="S_BAINER2.MP3" Name="s_bainer2.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fxes\s_bainer2.mp3" />
+                        </Component>
+                        <Component Id="WOBBELO.MP3" DiskId="1" Guid="78AB4757-057E-4BBF-AA8C-2A88BF3D2066">
+                            <File Id="WOBBELO.MP3" Name="wobbelo.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\fxes\wobbelo.mp3" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="ICONS" Name="icons">
+                        <Component Id="GREEN_TICK.PNG" DiskId="1" Guid="6113A90F-78D0-44F6-B12B-8FBA4B31AB58">
+                            <File Id="GREEN_TICK.PNG" Name="green_tick.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\icons\green_tick.png" />
+                        </Component>
+                        <Component Id="GREY_ICON.PNG" DiskId="1" Guid="8D2169AC-EEC9-4F6E-A999-6BF84E7FBEA8">
+                            <File Id="GREY_ICON.PNG" Name="grey_icon.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\icons\grey_icon.png" />
+                        </Component>
+                        <Component Id="NEW.PNG" DiskId="1" Guid="58CA87D8-7F6A-4B68-B951-15E720BB84D9">
+                            <File Id="NEW.PNG" Name="new.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\icons\new.png" />
+                        </Component>
+                        <Component Id="SHIP.JPEG" DiskId="1" Guid="DA7D6415-758F-4D5A-8A80-489477BAEACC">
+                            <File Id="SHIP.JPEG" Name="ship.jpeg" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\icons\ship.jpeg" />
+                        </Component>
+                        <Component Id="SHIP.PNG" DiskId="1" Guid="4E25AA64-E5DC-4E0D-8F1A-2692E5D847CC">
+                            <File Id="SHIP.PNG" Name="ship.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\icons\ship.png" />
+                        </Component>
+                        <Component Id="SPEECH_ENABLED.PNG" DiskId="1" Guid="2C130175-FD1C-49F3-81FA-7932183830AA">
+                            <File Id="SPEECH_ENABLED.PNG" Name="speech_enabled.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\icons\speech_enabled.png" />
+                        </Component>
+                        <Component Id="VOLUME_ENABLED.PNG" DiskId="1" Guid="0813D8A7-93D1-4D45-91CB-8FCD058CDCA6">
+                            <File Id="VOLUME_ENABLED.PNG" Name="volume_enabled.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\icons\volume_enabled.png" />
+                        </Component>
+                        <Component Id="VOLUME_MUTED.PNG" DiskId="1" Guid="A9D81485-D4BE-4AC5-952A-5608B4D25A58">
+                            <File Id="VOLUME_MUTED.PNG" Name="volume_muted.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\icons\volume_muted.png" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="IMAGES" Name="images">
+                        <Component Id="_1358886680_SHINE_14.PNG" DiskId="1" Guid="419474E4-1E59-49F4-B34D-72D6F3C1AEC1">
+                            <File Id="_1358886680_SHINE_14.PNG" Name="1358886680_shine_14.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\1358886680_shine_14.png" />
+                        </Component>
+                        <Component Id="_1358886698_STOCKS.PNG" DiskId="1" Guid="0312BFC8-7A62-465D-8E44-BD62DC1BF5E6">
+                            <File Id="_1358886698_STOCKS.PNG" Name="1358886698_Stocks.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\1358886698_Stocks.png" />
+                        </Component>
+                        <Component Id="_1358886698_STOCKS_VERTICAL.PNG" DiskId="1" Guid="316F5461-8D28-4D8A-AD7B-DE7068DF1A09">
+                            <File Id="_1358886698_STOCKS_VERTICAL.PNG" Name="1358886698_Stocks_vertical.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\1358886698_Stocks_vertical.png" />
+                        </Component>
+                        <Component Id="AIS.PNG" DiskId="1" Guid="25A9BFB0-DF33-44D0-9821-018CF8445E3C">
+                            <File Id="AIS.PNG" Name="ais.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais.png" />
+                        </Component>
+                        <Component Id="AISMAP.PNG" DiskId="1" Guid="7C020F5A-ACA7-4829-9951-0B36BA52ED1D">
+                            <File Id="AISMAP.PNG" Name="aismap.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\aismap.png" />
+                        </Component>
+                        <Component Id="BADGE_BG.PNG" DiskId="1" Guid="BED33020-ED34-4092-BA05-C10B11FD3915">
+                            <File Id="BADGE_BG.PNG" Name="badge_bg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\badge_bg.png" />
+                        </Component>
+                        <Component Id="BAR_IMAGE.PNG" DiskId="1" Guid="EC0B8F79-FF1F-4222-99C2-6E18EBE98CF6">
+                            <File Id="BAR_IMAGE.PNG" Name="bar_image.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\bar_image.png" />
+                        </Component>
+                        <Component Id="BG1.PNG" DiskId="1" Guid="CEFE228C-4171-42A7-929C-374F89305FB4">
+                            <File Id="BG1.PNG" Name="bg1.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\bg1.png" />
+                        </Component>
+                        <Component Id="CONTROLBAR_BTN0.PNG" DiskId="1" Guid="8ACF2289-C37E-4CA0-9DBA-88B4A4B3D1F8">
+                            <File Id="CONTROLBAR_BTN0.PNG" Name="controlbar_btn0.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\controlbar_btn0.png" />
+                        </Component>
+                        <Component Id="CONTROLBAR_BTN1.PNG" DiskId="1" Guid="505E2E68-61F2-4D8F-A906-CD635B8B8E27">
+                            <File Id="CONTROLBAR_BTN1.PNG" Name="controlbar_btn1.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\controlbar_btn1.png" />
+                        </Component>
+                        <Component Id="CONTROLBAR_BTN2.PNG" DiskId="1" Guid="22D0BB17-D099-48FC-9DB8-C11250CC42A9">
+                            <File Id="CONTROLBAR_BTN2.PNG" Name="controlbar_btn2.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\controlbar_btn2.png" />
+                        </Component>
+                        <Component Id="CONTROLBAR_BTN3.PNG" DiskId="1" Guid="BB8767A9-0BB6-422B-BF1C-BAF1AFEA8E6B">
+                            <File Id="CONTROLBAR_BTN3.PNG" Name="controlbar_btn3.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\controlbar_btn3.png" />
+                        </Component>
+                        <Component Id="DEFAULTDESKTOP_.PNG" DiskId="1" Guid="5710E992-022D-4FDA-A7DC-386F2A4715AC">
+                            <File Id="DEFAULTDESKTOP_.PNG" Name="defaultdesktop_.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\defaultdesktop_.png" />
+                        </Component>
+                        <Component Id="GRAPH_BG.PNG" DiskId="1" Guid="C2BD0C20-F1FF-47DE-81CB-45C6EE8585EE">
+                            <File Id="GRAPH_BG.PNG" Name="graph_bg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\graph_bg.png" />
+                        </Component>
+                        <Component Id="GRAPH_SHADOW.PNG" DiskId="1" Guid="DB9CD087-F55C-4732-BA52-D4B3279CDFF1">
+                            <File Id="GRAPH_SHADOW.PNG" Name="graph_shadow.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\graph_shadow.png" />
+                        </Component>
+                        <Component Id="GRAY_BUTTON_BG.PNG" DiskId="1" Guid="A2643B5F-EFD1-4515-889B-850CA604CECE">
+                            <File Id="GRAY_BUTTON_BG.PNG" Name="gray_button_bg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\gray_button_bg.png" />
+                        </Component>
+                        <Component Id="GRAY_BUTTON_BG_OVER.PNG" DiskId="1" Guid="CFC3ED4E-C0AD-4EE5-94AE-2269B4A49C0C">
+                            <File Id="GRAY_BUTTON_BG_OVER.PNG" Name="gray_button_bg_over.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\gray_button_bg_over.png" />
+                        </Component>
+                        <Component Id="GRZOOM_BTN0.PNG" DiskId="1" Guid="F1370F80-FC14-4A70-B16B-C9D70470BCE3">
+                            <File Id="GRZOOM_BTN0.PNG" Name="grzoom_btn0.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\grzoom_btn0.png" />
+                        </Component>
+                        <Component Id="GRZOOM_BTN1.PNG" DiskId="1" Guid="1A292092-3F49-463C-AF12-A31F9D20017B">
+                            <File Id="GRZOOM_BTN1.PNG" Name="grzoom_btn1.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\grzoom_btn1.png" />
+                        </Component>
+                        <Component Id="GRZOOM_BTN2.PNG" DiskId="1" Guid="0720D1A9-36BF-47AF-AFBD-CE4851C9614E">
+                            <File Id="GRZOOM_BTN2.PNG" Name="grzoom_btn2.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\grzoom_btn2.png" />
+                        </Component>
+                        <Component Id="GRZOOM_BTN3.PNG" DiskId="1" Guid="6C1442AF-0AAE-4A19-B6EE-820BA1CAA542">
+                            <File Id="GRZOOM_BTN3.PNG" Name="grzoom_btn3.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\grzoom_btn3.png" />
+                        </Component>
+                        <Component Id="ICO_NAVIGATING.PNG" DiskId="1" Guid="5B79D49A-0090-4E19-91E4-D1AD5641AAE7">
+                            <File Id="ICO_NAVIGATING.PNG" Name="ico_navigating.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ico_navigating.png" />
+                        </Component>
+                        <Component Id="ICO_RACING.PNG" DiskId="1" Guid="6A2EFE52-BABC-4E88-A874-1CAA3FE4C809">
+                            <File Id="ICO_RACING.PNG" Name="ico_racing.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ico_racing.png" />
+                        </Component>
+                        <Component Id="ICO_SAILING.PNG" DiskId="1" Guid="B564A244-DCE8-41D1-99B0-C51C6964EC5C">
+                            <File Id="ICO_SAILING.PNG" Name="ico_sailing.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ico_sailing.png" />
+                        </Component>
+                        <Component Id="INPUTFIELD.PNG" DiskId="1" Guid="E5C7174D-E8BE-4A9B-9B2F-D004C36C6782">
+                            <File Id="INPUTFIELD.PNG" Name="inputfield.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\inputfield.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BG.PNG" DiskId="1" Guid="97CA2354-FB62-4AA1-8A34-0A54A12600F6">
+                            <File Id="LAYOUTSW_BG.PNG" Name="layoutsw_bg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_bg.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN0.PNG" DiskId="1" Guid="4A51475D-D5E8-4C88-8D2E-895A14E9B284">
+                            <File Id="LAYOUTSW_BTN0.PNG" Name="layoutsw_btn0.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn0.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN0_BAL.PNG" DiskId="1" Guid="5B4376FD-A53C-4EC9-9F7B-7BEA677D41CF">
+                            <File Id="LAYOUTSW_BTN0_BAL.PNG" Name="layoutsw_btn0_bal.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn0_bal.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN0_JOBB.PNG" DiskId="1" Guid="2FEE1764-D451-44AD-BA88-048D60AE08EE">
+                            <File Id="LAYOUTSW_BTN0_JOBB.PNG" Name="layoutsw_btn0_jobb.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn0_jobb.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN1.PNG" DiskId="1" Guid="43D6E47B-0E0C-4B5B-B838-1CD67BCCD820">
+                            <File Id="LAYOUTSW_BTN1.PNG" Name="layoutsw_btn1.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn1.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN1_BAL.PNG" DiskId="1" Guid="982BB0D2-7FE8-4B75-B808-F63754F75C17">
+                            <File Id="LAYOUTSW_BTN1_BAL.PNG" Name="layoutsw_btn1_bal.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn1_bal.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN1_JOBB.PNG" DiskId="1" Guid="A483341A-5DCC-4AA5-A725-3657919CBE5A">
+                            <File Id="LAYOUTSW_BTN1_JOBB.PNG" Name="layoutsw_btn1_jobb.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn1_jobb.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN2.PNG" DiskId="1" Guid="DA9AA203-8B2F-4700-9F42-711F7593C007">
+                            <File Id="LAYOUTSW_BTN2.PNG" Name="layoutsw_btn2.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn2.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN2_BAL.PNG" DiskId="1" Guid="01EFF75C-C8FC-4B40-853A-673F49F00C85">
+                            <File Id="LAYOUTSW_BTN2_BAL.PNG" Name="layoutsw_btn2_bal.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn2_bal.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN2_JOBB.PNG" DiskId="1" Guid="3CC0EF7D-634D-4B8B-AF19-D3219DA0EA6F">
+                            <File Id="LAYOUTSW_BTN2_JOBB.PNG" Name="layoutsw_btn2_jobb.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn2_jobb.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN3.PNG" DiskId="1" Guid="C2275456-86BF-4946-B84F-6F785E76D48B">
+                            <File Id="LAYOUTSW_BTN3.PNG" Name="layoutsw_btn3.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn3.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN3_BAL.PNG" DiskId="1" Guid="425931B6-B5AC-46FD-9649-BBEEC4EA7976">
+                            <File Id="LAYOUTSW_BTN3_BAL.PNG" Name="layoutsw_btn3_bal.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn3_bal.png" />
+                        </Component>
+                        <Component Id="LAYOUTSW_BTN3_JOBB.PNG" DiskId="1" Guid="14E7141A-40C8-4341-B3C5-84688B15546D">
+                            <File Id="LAYOUTSW_BTN3_JOBB.PNG" Name="layoutsw_btn3_jobb.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\layoutsw_btn3_jobb.png" />
+                        </Component>
+                        <Component Id="LIC_KEY_ICO.PNG" DiskId="1" Guid="EF30E77B-A32D-4F5C-B627-6828660517F9">
+                            <File Id="LIC_KEY_ICO.PNG" Name="lic_key_ico.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\lic_key_ico.png" />
+                        </Component>
+                        <Component Id="LOGO.PNG" DiskId="1" Guid="7B58B4CD-E45F-4FD2-808A-A6F8B3C4539D">
+                            <File Id="LOGO.PNG" Name="logo.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\logo.png" />
+                        </Component>
+                        <Component Id="POLAR_SETTINGS_BG.PNG" DiskId="1" Guid="D30645F4-E863-4790-831E-70BA4B5EFCE6">
+                            <File Id="POLAR_SETTINGS_BG.PNG" Name="polar_settings_bg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\polar_settings_bg.png" />
+                        </Component>
+                        <Component Id="SETTINGS_BTN0.PNG" DiskId="1" Guid="E4CE13C0-D42F-495F-9EC2-0F396E6B8FA7">
+                            <File Id="SETTINGS_BTN0.PNG" Name="settings_btn0.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\settings_btn0.png" />
+                        </Component>
+                        <Component Id="SETTINGS_BTN1.PNG" DiskId="1" Guid="1BB1DA13-2DC1-46DC-B699-F3BF27B1817D">
+                            <File Id="SETTINGS_BTN1.PNG" Name="settings_btn1.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\settings_btn1.png" />
+                        </Component>
+                        <Component Id="SETTINGS_LONGBTN0.PNG" DiskId="1" Guid="07D64621-593E-49C5-8143-792E32F37DBE">
+                            <File Id="SETTINGS_LONGBTN0.PNG" Name="settings_longbtn0.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\settings_longbtn0.png" />
+                        </Component>
+                        <Component Id="SETTINGS_LONGBTN1.PNG" DiskId="1" Guid="1E4CE250-5A32-4336-ABF6-0D79044D25AE">
+                            <File Id="SETTINGS_LONGBTN1.PNG" Name="settings_longbtn1.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\settings_longbtn1.png" />
+                        </Component>
+                        <Component Id="WINDOW_RESIZE.PNG" DiskId="1" Guid="E56A4455-D048-4D50-BF56-CB9DEB2D2E3A">
+                            <File Id="WINDOW_RESIZE.PNG" Name="window_resize.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\window_resize.png" />
+                        </Component>
+                        <Directory Id="AIS" Name="ais">
+                            <Component Id="AIRCRAFT.PNG" DiskId="1" Guid="9C506828-8F9E-42F4-87A0-9FCD6DD72374">
+                                <File Id="AIRCRAFT.PNG" Name="aircraft.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\aircraft.png" />
+                            </Component>
+                            <Component Id="AISINFOBG.PNG" DiskId="1" Guid="E5641573-C8B1-4A51-81D6-93C031D531F0">
+                                <File Id="AISINFOBG.PNG" Name="aisInfoBg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\aisInfoBg.png" />
+                            </Component>
+                            <Component Id="BASESTATION.PNG" DiskId="1" Guid="5B91E00A-FB86-4010-A437-6BFE812B5B09">
+                                <File Id="BASESTATION.PNG" Name="basestation.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\basestation.png" />
+                            </Component>
+                            <Component Id="CARGO_STOP.PNG" DiskId="1" Guid="8FD14712-CC06-4D6F-BA0E-6891345DAF56">
+                                <File Id="CARGO_STOP.PNG" Name="cargo_stop.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\cargo_stop.png" />
+                            </Component>
+                            <Component Id="CARGO_VESSEL.PNG" DiskId="1" Guid="53EE3A8C-BB71-4A96-B2FF-1AD12C02EC14">
+                                <File Id="CARGO_VESSEL.PNG" Name="cargo_vessel.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\cargo_vessel.png" />
+                            </Component>
+                            <Component Id="CLOSESTATE.PNG" DiskId="1" Guid="618327A6-1201-482A-8F4E-115A50BA8C1C">
+                                <File Id="CLOSESTATE.PNG" Name="closeState.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\closeState.png" />
+                            </Component>
+                            <Component Id="OPENAISITEMBG.PNG" DiskId="1" Guid="C23C53C8-CF5E-430D-AD3D-749932C25A30">
+                                <File Id="OPENAISITEMBG.PNG" Name="openAisItemBg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\openAisItemBg.png" />
+                            </Component>
+                            <Component Id="OPENSTATE.PNG" DiskId="1" Guid="B14D272E-A933-43D9-BCC0-82C7F6735FF6">
+                                <File Id="OPENSTATE.PNG" Name="openState.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\openState.png" />
+                            </Component>
+                            <Component Id="PASSENGER_STOP.PNG" DiskId="1" Guid="DE3B036C-D4F0-4589-83C6-605CDB74E424">
+                                <File Id="PASSENGER_STOP.PNG" Name="passenger_stop.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\passenger_stop.png" />
+                            </Component>
+                            <Component Id="PASSENGER_VESSEL.PNG" DiskId="1" Guid="1B8576EF-627F-4960-8B79-8B75054905D9">
+                                <File Id="PASSENGER_VESSEL.PNG" Name="passenger_vessel.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\passenger_vessel.png" />
+                            </Component>
+                            <Component Id="SAIL_STOP.PNG" DiskId="1" Guid="9D1D68A5-3071-41DF-920B-AF0A5734C8A5">
+                                <File Id="SAIL_STOP.PNG" Name="sail_stop.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\sail_stop.png" />
+                            </Component>
+                            <Component Id="SAIL_VESSEL.PNG" DiskId="1" Guid="B6AB3CED-1ECF-4CA8-AF89-04862CD01CE6">
+                                <File Id="SAIL_VESSEL.PNG" Name="sail_vessel.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\sail_vessel.png" />
+                            </Component>
+                            <Component Id="UNKNOWN_STOP.PNG" DiskId="1" Guid="CF8D7AF1-9B2E-41A8-A36D-7EE48B4D9445">
+                                <File Id="UNKNOWN_STOP.PNG" Name="unknown_stop.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\unknown_stop.png" />
+                            </Component>
+                            <Component Id="UNKNOWN_VESSEL.PNG" DiskId="1" Guid="3668C223-A193-4169-8542-CA4492483E27">
+                                <File Id="UNKNOWN_VESSEL.PNG" Name="unknown_vessel.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\ais\unknown_vessel.png" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="ALARMLIST" Name="alarmlist">
+                            <Component Id="ALARMLIST_FADE.PNG" DiskId="1" Guid="083A3649-6FFB-40BA-A924-C8761F5A1034">
+                                <File Id="ALARMLIST_FADE.PNG" Name="alarmlist_fade.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\alarmlist_fade.png" />
+                            </Component>
+                            <Component Id="ALARMLIST_FRAME.PNG" DiskId="1" Guid="AA5A79F2-541B-47FA-A25F-08C257412B6C">
+                                <File Id="ALARMLIST_FRAME.PNG" Name="alarmlist_frame.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\alarmlist_frame.png" />
+                            </Component>
+                            <Component Id="ALARMLIST_FRAME_BG.PNG" DiskId="1" Guid="E3BDD8BB-18AD-4ED9-8323-EF289C1F2D30">
+                                <File Id="ALARMLIST_FRAME_BG.PNG" Name="alarmlist_frame_bg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\alarmlist_frame_bg.png" />
+                            </Component>
+                            <Component Id="ALARMLIST_FRAME_BOTTOM.PNG" DiskId="1" Guid="01590BBE-9061-43E3-B4B3-768443F234C0">
+                                <File Id="ALARMLIST_FRAME_BOTTOM.PNG" Name="alarmlist_frame_bottom.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\alarmlist_frame_bottom.png" />
+                            </Component>
+                            <Component Id="ALARMLIST_FRAME_LEFT.PNG" DiskId="1" Guid="B8AA705A-07C0-4155-B030-02A2CFF6B63B">
+                                <File Id="ALARMLIST_FRAME_LEFT.PNG" Name="alarmlist_frame_left.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\alarmlist_frame_left.png" />
+                            </Component>
+                            <Component Id="ALARMLIST_FRAME_RIGHT.PNG" DiskId="1" Guid="3962664A-7A52-4B07-AAE8-AC125726232B">
+                                <File Id="ALARMLIST_FRAME_RIGHT.PNG" Name="alarmlist_frame_right.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\alarmlist_frame_right.png" />
+                            </Component>
+                            <Component Id="ALARMLIST_FRAME_TOP.PNG" DiskId="1" Guid="EBC679E3-41D7-43EF-8DC5-72DC6FB1C9DE">
+                                <File Id="ALARMLIST_FRAME_TOP.PNG" Name="alarmlist_frame_top.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\alarmlist_frame_top.png" />
+                            </Component>
+                            <Component Id="ALARM_OFF.PNG" DiskId="1" Guid="277E05B3-DF49-4D59-B213-A25563B93C87">
+                                <File Id="ALARM_OFF.PNG" Name="alarm_off.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\alarm_off.png" />
+                            </Component>
+                            <Component Id="ALARM_ON.PNG" DiskId="1" Guid="0F18700A-BD54-4DFA-B27B-5A92A340F95A">
+                                <File Id="ALARM_ON.PNG" Name="alarm_on.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\alarm_on.png" />
+                            </Component>
+                            <Component Id="ALERT_BADGE.PNG" DiskId="1" Guid="F1302D71-FE70-4A66-989B-4F77AD8A23B7">
+                                <File Id="ALERT_BADGE.PNG" Name="alert_badge.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\alert_badge.png" />
+                            </Component>
+                            <Component Id="BTN1_DOWN.PNG" DiskId="1" Guid="46F72E9E-1060-4045-B69A-7FAA6C5132AF">
+                                <File Id="BTN1_DOWN.PNG" Name="btn1_down.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\btn1_down.png" />
+                            </Component>
+                            <Component Id="BTN1_UP.PNG" DiskId="1" Guid="12F8C098-E6C3-4CF8-A92F-7E61DC693DB2">
+                                <File Id="BTN1_UP.PNG" Name="btn1_up.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\btn1_up.png" />
+                            </Component>
+                            <Component Id="CSUSZ_BAL_FEKETE.PNG" DiskId="1" Guid="5FCA52E7-CB0C-4CD3-A56A-7B6A27E3E88E">
+                                <File Id="CSUSZ_BAL_FEKETE.PNG" Name="csusz_bal_fekete.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\csusz_bal_fekete.png" />
+                            </Component>
+                            <Component Id="CSUSZ_BAL_PIROS.PNG" DiskId="1" Guid="7F8C54DA-FFAA-4C16-A99D-C92E97FD71E0">
+                                <File Id="CSUSZ_BAL_PIROS.PNG" Name="csusz_bal_piros.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\csusz_bal_piros.png" />
+                            </Component>
+                            <Component Id="CSUSZ_JOBB_FEKETE.PNG" DiskId="1" Guid="5431E838-46BC-4BAE-BD52-0816A7BD8660">
+                                <File Id="CSUSZ_JOBB_FEKETE.PNG" Name="csusz_jobb_fekete.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\csusz_jobb_fekete.png" />
+                            </Component>
+                            <Component Id="CSUSZ_JOBB_PIROS.PNG" DiskId="1" Guid="4619196B-F1DF-480A-8A05-02F4295374CB">
+                                <File Id="CSUSZ_JOBB_PIROS.PNG" Name="csusz_jobb_piros.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\csusz_jobb_piros.png" />
+                            </Component>
+                            <Component Id="FRAME_MASK.PNG" DiskId="1" Guid="4B5CD2C5-C60F-4A35-8206-8D30EE0665A4">
+                                <File Id="FRAME_MASK.PNG" Name="frame_mask.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\frame_mask.png" />
+                            </Component>
+                            <Component Id="GRAPHW_BOTTOM.PNG" DiskId="1" Guid="5CA0789A-6FC9-42DE-AD47-F97A16B7303B">
+                                <File Id="GRAPHW_BOTTOM.PNG" Name="graphw_bottom.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphw_bottom.png" />
+                            </Component>
+                            <Component Id="GRAPHW_BOTTOMLEFT.PNG" DiskId="1" Guid="B61A8B15-44BE-4B9D-AFD7-78095859CC1B">
+                                <File Id="GRAPHW_BOTTOMLEFT.PNG" Name="graphw_bottomleft.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphw_bottomleft.png" />
+                            </Component>
+                            <Component Id="GRAPHW_BOTTOMRIGHT.PNG" DiskId="1" Guid="C6BC0733-1473-4F37-83D2-E182E7394F1B">
+                                <File Id="GRAPHW_BOTTOMRIGHT.PNG" Name="graphw_bottomright.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphw_bottomright.png" />
+                            </Component>
+                            <Component Id="GRAPHW_CLOSE_DOWN.PNG" DiskId="1" Guid="5B474C93-3650-49A7-923A-76C7133E8C23">
+                                <File Id="GRAPHW_CLOSE_DOWN.PNG" Name="graphw_close_down.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphw_close_down.png" />
+                            </Component>
+                            <Component Id="GRAPHW_CLOSE_UP.PNG" DiskId="1" Guid="77AC479C-E1B3-4EA2-8F19-734A64762B06">
+                                <File Id="GRAPHW_CLOSE_UP.PNG" Name="graphw_close_up.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphw_close_up.png" />
+                            </Component>
+                            <Component Id="GRAPHW_LEFT.PNG" DiskId="1" Guid="931399A8-9E86-4B2A-AD77-100CA4FD8D9E">
+                                <File Id="GRAPHW_LEFT.PNG" Name="graphw_left.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphw_left.png" />
+                            </Component>
+                            <Component Id="GRAPHW_RIGHT.PNG" DiskId="1" Guid="68EA8290-DA06-4B3E-8EAE-759A49E9A700">
+                                <File Id="GRAPHW_RIGHT.PNG" Name="graphw_right.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphw_right.png" />
+                            </Component>
+                            <Component Id="GRAPHW_TOP.PNG" DiskId="1" Guid="E18CF2D3-0479-4C2C-BFD3-240AC82CB467">
+                                <File Id="GRAPHW_TOP.PNG" Name="graphw_top.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphw_top.png" />
+                            </Component>
+                            <Component Id="GRAPHW_TOPLEFT.PNG" DiskId="1" Guid="D2CB110D-FA9A-488E-817E-36855EB9B5C9">
+                                <File Id="GRAPHW_TOPLEFT.PNG" Name="graphw_topleft.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphw_topleft.png" />
+                            </Component>
+                            <Component Id="GRAPHW_TOPRIGHT.PNG" DiskId="1" Guid="9B348607-5FEA-4846-8D82-82ADB70BDE65">
+                                <File Id="GRAPHW_TOPRIGHT.PNG" Name="graphw_topright.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphw_topright.png" />
+                            </Component>
+                            <Component Id="GRAPHX.PNG" DiskId="1" Guid="598ADDDC-751A-4BAD-B6F4-E82F6E7B6652">
+                                <File Id="GRAPHX.PNG" Name="graphx.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\graphx.png" />
+                            </Component>
+                            <Component Id="INFO_BADGE.PNG" DiskId="1" Guid="82942198-3848-45DB-B46E-B0854E4E00F9">
+                                <File Id="INFO_BADGE.PNG" Name="info_badge.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\info_badge.png" />
+                            </Component>
+                            <Component Id="LIST_ELEMENT.PNG" DiskId="1" Guid="D3CD46DE-02D3-42D2-B0E9-FF42CF3ABAB1">
+                                <File Id="LIST_ELEMENT.PNG" Name="list_element.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\list_element.png" />
+                            </Component>
+                            <Component Id="MARKER_ACTUAL.PNG" DiskId="1" Guid="5E9D7D55-AB44-4221-9E84-86D858507C0B">
+                                <File Id="MARKER_ACTUAL.PNG" Name="marker_actual.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\marker_actual.png" />
+                            </Component>
+                            <Component Id="SLIDER_BG.PNG" DiskId="1" Guid="A66BBF92-E935-4A78-B540-6BFA572BF54A">
+                                <File Id="SLIDER_BG.PNG" Name="slider_bg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\slider_bg.png" />
+                            </Component>
+                            <Component Id="SLIDER_BL.PNG" DiskId="1" Guid="E32360C3-4F47-4D33-872A-A36819E40338">
+                                <File Id="SLIDER_BL.PNG" Name="slider_bl.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\slider_bl.png" />
+                            </Component>
+                            <Component Id="SLIDER_BL_END.PNG" DiskId="1" Guid="78376987-EE11-435C-87BD-D07B0DAB1B38">
+                                <File Id="SLIDER_BL_END.PNG" Name="slider_bl_end.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\slider_bl_end.png" />
+                            </Component>
+                            <Component Id="SLIDER_KNOB.PNG" DiskId="1" Guid="5EC2604E-0936-435A-9AB3-F3B63C4FCC2F">
+                                <File Id="SLIDER_KNOB.PNG" Name="slider_knob.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\slider_knob.png" />
+                            </Component>
+                            <Component Id="SLIDER_RED.PNG" DiskId="1" Guid="E408727F-7FDC-4319-ACB8-4BF64B799964">
+                                <File Id="SLIDER_RED.PNG" Name="slider_red.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\slider_red.png" />
+                            </Component>
+                            <Component Id="SLIDER_RED_END.PNG" DiskId="1" Guid="8905D1AF-C9B7-4CD0-AFBF-993FB1257D95">
+                                <File Id="SLIDER_RED_END.PNG" Name="slider_red_end.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\slider_red_end.png" />
+                            </Component>
+                            <Component Id="VOICE_OFF.PNG" DiskId="1" Guid="7CF0E6B1-C16E-4802-925F-6D4329A232B6">
+                                <File Id="VOICE_OFF.PNG" Name="voice_off.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\voice_off.png" />
+                            </Component>
+                            <Component Id="VOICE_ON.PNG" DiskId="1" Guid="9EF6F6C1-78C9-48F2-8285-151556DB524B">
+                                <File Id="VOICE_ON.PNG" Name="voice_on.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\voice_on.png" />
+                            </Component>
+                            <Component Id="WINDOW_BOTTOM.PNG" DiskId="1" Guid="E5E80C93-762A-46E6-A473-289A8BFF62E8">
+                                <File Id="WINDOW_BOTTOM.PNG" Name="window_bottom.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\window_bottom.png" />
+                            </Component>
+                            <Component Id="WINDOW_BOTTOMLEFT.PNG" DiskId="1" Guid="511E5627-A3B4-4939-93E9-BEB8ABC248FC">
+                                <File Id="WINDOW_BOTTOMLEFT.PNG" Name="window_bottomleft.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\window_bottomleft.png" />
+                            </Component>
+                            <Component Id="WINDOW_BOTTOMRIGHT.PNG" DiskId="1" Guid="B3634C8C-7AE6-465C-9D54-59D9CB244C3D">
+                                <File Id="WINDOW_BOTTOMRIGHT.PNG" Name="window_bottomright.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\window_bottomright.png" />
+                            </Component>
+                            <Component Id="WINDOW_CLOSE_DOWN.PNG" DiskId="1" Guid="AB522451-8A9D-41F2-B4F2-4CEA6800E38A">
+                                <File Id="WINDOW_CLOSE_DOWN.PNG" Name="window_close_down.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\window_close_down.png" />
+                            </Component>
+                            <Component Id="WINDOW_CLOSE_UP.PNG" DiskId="1" Guid="A804323F-674F-4E82-BCE7-CCBE5A84D8AE">
+                                <File Id="WINDOW_CLOSE_UP.PNG" Name="window_close_up.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\window_close_up.png" />
+                            </Component>
+                            <Component Id="WINDOW_LEFT.PNG" DiskId="1" Guid="CF8446DA-5004-453E-BB1A-C4DAE947CD1B">
+                                <File Id="WINDOW_LEFT.PNG" Name="window_left.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\window_left.png" />
+                            </Component>
+                            <Component Id="WINDOW_RIGHT.PNG" DiskId="1" Guid="7B823C7D-FC52-40A2-8E20-02FFA3AA7528">
+                                <File Id="WINDOW_RIGHT.PNG" Name="window_right.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\window_right.png" />
+                            </Component>
+                            <Component Id="WINDOW_TOP.PNG" DiskId="1" Guid="14EE57ED-0410-4AB0-B9B3-BA610AB5CAA7">
+                                <File Id="WINDOW_TOP.PNG" Name="window_top.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\window_top.png" />
+                            </Component>
+                            <Component Id="WINDOW_TOPLEFT.PNG" DiskId="1" Guid="2D82D70C-FF7D-43AC-A2CC-A177ED01E9B2">
+                                <File Id="WINDOW_TOPLEFT.PNG" Name="window_topleft.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\window_topleft.png" />
+                            </Component>
+                            <Component Id="WINDOW_TOPRIGHT.PNG" DiskId="1" Guid="7EA3E8A0-C92C-4519-AF00-850721EF1016">
+                                <File Id="WINDOW_TOPRIGHT.PNG" Name="window_topright.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\alarmlist\window_topright.png" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="LAYOUT_PNGS" Name="Layout pngs">
+                            <Component Id="ADD_BG.PNG" DiskId="1" Guid="F169B0A5-FED4-4031-9F52-D56A9B903BA1">
+                                <File Id="ADD_BG.PNG" Name="add_bg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\add_bg.png" />
+                            </Component>
+                            <Component Id="ADD_BTN_DOWN01.PNG" DiskId="1" Guid="A7185FB4-3F5E-4A16-AF30-E3AB7F7BF5E5">
+                                <File Id="ADD_BTN_DOWN01.PNG" Name="add_btn_down01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\add_btn_down01.png" />
+                            </Component>
+                            <Component Id="ADD_BTN_DOWN02.PNG" DiskId="1" Guid="41DA3B4E-999F-46EB-A99D-0CB3461FF4B9">
+                                <File Id="ADD_BTN_DOWN02.PNG" Name="add_btn_down02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\add_btn_down02.png" />
+                            </Component>
+                            <Component Id="ADD_BTN_UP01.PNG" DiskId="1" Guid="D62A3A29-C454-48D0-BAA7-BD7F4F8A54C9">
+                                <File Id="ADD_BTN_UP01.PNG" Name="add_btn_up01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\add_btn_up01.png" />
+                            </Component>
+                            <Component Id="ADD_BTN_UP02.PNG" DiskId="1" Guid="56C11B01-7DC7-4A94-B477-77A950A9579A">
+                                <File Id="ADD_BTN_UP02.PNG" Name="add_btn_up02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\add_btn_up02.png" />
+                            </Component>
+                            <Component Id="ADD_LESS_BTN01.PNG" DiskId="1" Guid="BB0F49EE-A369-4576-B267-70B73A9E7BB6">
+                                <File Id="ADD_LESS_BTN01.PNG" Name="add_less_btn01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\add_less_btn01.png" />
+                            </Component>
+                            <Component Id="ADD_LESS_BTN02.PNG" DiskId="1" Guid="33E82DBA-849D-4DF0-8FE7-4DC86FF46BAD">
+                                <File Id="ADD_LESS_BTN02.PNG" Name="add_less_btn02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\add_less_btn02.png" />
+                            </Component>
+                            <Component Id="ADD_MORE_BTN01.PNG" DiskId="1" Guid="B5D34DCE-50A4-4F9E-926F-C26BE8444050">
+                                <File Id="ADD_MORE_BTN01.PNG" Name="add_more_btn01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\add_more_btn01.png" />
+                            </Component>
+                            <Component Id="ADD_MORE_BTN02.PNG" DiskId="1" Guid="55162508-7808-45B2-862F-3C6E2DF5DB64">
+                                <File Id="ADD_MORE_BTN02.PNG" Name="add_more_btn02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\add_more_btn02.png" />
+                            </Component>
+                            <Component Id="COUNTER_BG.PNG" DiskId="1" Guid="C701374D-2B78-443A-94BF-E07B87FCAE96">
+                                <File Id="COUNTER_BG.PNG" Name="counter_bg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\counter_bg.png" />
+                            </Component>
+                            <Component Id="DROPDOWN_01.PNG" DiskId="1" Guid="AE2E45C7-20E9-4A2E-8BDC-429855E7027F">
+                                <File Id="DROPDOWN_01.PNG" Name="dropdown_01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\dropdown_01.png" />
+                            </Component>
+                            <Component Id="DROPDOWN_02.PNG" DiskId="1" Guid="8C9CE10D-1C5C-4BFA-9B1C-59B1691B412B">
+                                <File Id="DROPDOWN_02.PNG" Name="dropdown_02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\dropdown_02.png" />
+                            </Component>
+                            <Component Id="LEDIT_CLOSEBTN01.PNG" DiskId="1" Guid="4A43A0ED-FF05-41B9-9247-C4CBBEFBE8BF">
+                                <File Id="LEDIT_CLOSEBTN01.PNG" Name="ledit_closebtn01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\ledit_closebtn01.png" />
+                            </Component>
+                            <Component Id="LEDIT_CLOSEBTN02.PNG" DiskId="1" Guid="1890F916-60BC-4F45-B79D-BDA10F9A2DAB">
+                                <File Id="LEDIT_CLOSEBTN02.PNG" Name="ledit_closebtn02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\ledit_closebtn02.png" />
+                            </Component>
+                            <Component Id="LEDIT_RESIZEBTN01.PNG" DiskId="1" Guid="B43C39DB-3D8F-4D98-927C-0C2605A325BA">
+                                <File Id="LEDIT_RESIZEBTN01.PNG" Name="ledit_resizebtn01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\ledit_resizebtn01.png" />
+                            </Component>
+                            <Component Id="LEDIT_RESIZEBTN02.PNG" DiskId="1" Guid="2CDE0CAB-FCE2-41EF-AB85-8F9EF7958C71">
+                                <File Id="LEDIT_RESIZEBTN02.PNG" Name="ledit_resizebtn02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\ledit_resizebtn02.png" />
+                            </Component>
+                            <Component Id="MENU_BTN01.PNG" DiskId="1" Guid="C423CE5E-6536-4790-8DC1-DDCD71EF13BD">
+                                <File Id="MENU_BTN01.PNG" Name="menu_btn01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\menu_btn01.png" />
+                            </Component>
+                            <Component Id="MENU_BTN02.PNG" DiskId="1" Guid="9E0F4E9B-8942-4E3B-8E32-3D338AC9C1A1">
+                                <File Id="MENU_BTN02.PNG" Name="menu_btn02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\menu_btn02.png" />
+                            </Component>
+                            <Component Id="REPLAY_BACK01.PNG" DiskId="1" Guid="08E51FAB-CCD3-45E3-9B57-DD5D5B66B19E">
+                                <File Id="REPLAY_BACK01.PNG" Name="replay_back01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_back01.png" />
+                            </Component>
+                            <Component Id="REPLAY_BACK02.PNG" DiskId="1" Guid="9B8C251C-27EC-46A0-928E-4025A209FC2C">
+                                <File Id="REPLAY_BACK02.PNG" Name="replay_back02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_back02.png" />
+                            </Component>
+                            <Component Id="REPLAY_PLAY01.PNG" DiskId="1" Guid="4BD0BE7E-FD09-4537-AF63-1A79EC8B46D5">
+                                <File Id="REPLAY_PLAY01.PNG" Name="replay_play01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_play01.png" />
+                            </Component>
+                            <Component Id="REPLAY_PLAY02.PNG" DiskId="1" Guid="8A438B7A-2253-4B78-A030-10EAE76BDC78">
+                                <File Id="REPLAY_PLAY02.PNG" Name="replay_play02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_play02.png" />
+                            </Component>
+                            <Component Id="REPLAY_STOP01.PNG" DiskId="1" Guid="8AB9218A-6F68-43C8-A6A7-9B7391C2ED7B">
+                                <File Id="REPLAY_STOP01.PNG" Name="replay_stop01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_stop01.png" />
+                            </Component>
+                            <Component Id="REPLAY_STOP02.PNG" DiskId="1" Guid="D52D0860-1E72-4AFA-9615-BCE569CEFB94">
+                                <File Id="REPLAY_STOP02.PNG" Name="replay_stop02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_stop02.png" />
+                            </Component>
+                            <Component Id="REPLAY_X01.PNG" DiskId="1" Guid="2CF1FB6A-5F64-42EE-8ACE-92297FFB7F30">
+                                <File Id="REPLAY_X01.PNG" Name="replay_x01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_x01.png" />
+                            </Component>
+                            <Component Id="REPLAY_X02.PNG" DiskId="1" Guid="F80968D2-82E8-4941-9F11-2722985E943E">
+                                <File Id="REPLAY_X02.PNG" Name="replay_x02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_x02.png" />
+                            </Component>
+                            <Component Id="REPLAY_ZOOMIN01.PNG" DiskId="1" Guid="158F81BC-CAE1-42F6-AB33-E568747BB837">
+                                <File Id="REPLAY_ZOOMIN01.PNG" Name="replay_zoomin01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_zoomin01.png" />
+                            </Component>
+                            <Component Id="REPLAY_ZOOMIN02.PNG" DiskId="1" Guid="8C54DACF-784D-4370-89CF-60167F448696">
+                                <File Id="REPLAY_ZOOMIN02.PNG" Name="replay_zoomin02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_zoomin02.png" />
+                            </Component>
+                            <Component Id="REPLAY_ZOOMOUT01.PNG" DiskId="1" Guid="36F858E8-A40C-49BA-BB47-A1B6A0B0DD66">
+                                <File Id="REPLAY_ZOOMOUT01.PNG" Name="replay_zoomout01.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_zoomout01.png" />
+                            </Component>
+                            <Component Id="REPLAY_ZOOMOUT02.PNG" DiskId="1" Guid="950188AE-1337-41B5-9DE5-7D4368A89AC9">
+                                <File Id="REPLAY_ZOOMOUT02.PNG" Name="replay_zoomout02.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\replay_zoomout02.png" />
+                            </Component>
+                            <Component Id="SWITCH_BG.PNG" DiskId="1" Guid="A5C4346D-6441-42EF-9062-ACABCB504D0D">
+                                <File Id="SWITCH_BG.PNG" Name="switch_bg.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\switch_bg.png" />
+                            </Component>
+                            <Component Id="SWITCH_KNOB.PNG" DiskId="1" Guid="A07A307B-A4AD-4777-9F4E-D988B48157F4">
+                                <File Id="SWITCH_KNOB.PNG" Name="switch_knob.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\switch_knob.png" />
+                            </Component>
+                            <Component Id="SWITCH_OFF.PNG" DiskId="1" Guid="B14D7A91-59F8-4B04-8A6C-EB4E86ACEEC9">
+                                <File Id="SWITCH_OFF.PNG" Name="switch_off.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\switch_off.png" />
+                            </Component>
+                            <Component Id="SWITCH_ON.PNG" DiskId="1" Guid="2077F27B-ACAC-4C29-B14F-FF8C134EEC82">
+                                <File Id="SWITCH_ON.PNG" Name="switch_on.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\switch_on.png" />
+                            </Component>
+                            <Component Id="TIMELINE.PNG" DiskId="1" Guid="83891F5A-32FE-4769-A207-66E1EDFE93B5">
+                                <File Id="TIMELINE.PNG" Name="timeline.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\timeline.png" />
+                            </Component>
+                            <Component Id="TIMELINE_END.PNG" DiskId="1" Guid="87C6FC87-D468-4218-AE1A-A799DEE0B6A9">
+                                <File Id="TIMELINE_END.PNG" Name="timeline_end.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\timeline_end.png" />
+                            </Component>
+                            <Component Id="TIMELINE_END_MORE.PNG" DiskId="1" Guid="9B44193C-41B4-4F22-AB33-2DFDDCBA3CF4">
+                                <File Id="TIMELINE_END_MORE.PNG" Name="timeline_end_more.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\timeline_end_more.png" />
+                            </Component>
+                            <Component Id="TIMELINE_START.PNG" DiskId="1" Guid="C67597EB-6605-4BDB-9FB2-126084D5AF83">
+                                <File Id="TIMELINE_START.PNG" Name="timeline_start.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\timeline_start.png" />
+                            </Component>
+                            <Component Id="TIMELINE_START_MORE.PNG" DiskId="1" Guid="79212BE4-C0C9-4D82-ACE5-4B7C74C7D267">
+                                <File Id="TIMELINE_START_MORE.PNG" Name="timeline_start_more.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\Layout pngs\timeline_start_more.png" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="SMALLBITMAPS" Name="smallBitmaps">
+                            <Component Id="CLASSIC_CHWINDANGLE_APP.PNG" DiskId="1" Guid="1E56CF96-8278-4631-8E07-2D4FD59A7EEC">
+                                <File Id="CLASSIC_CHWINDANGLE_APP.PNG" Name="classic_CHwindangle_app.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\smallBitmaps\classic_CHwindangle_app.png" />
+                            </Component>
+                            <Component Id="CLASSIC_CHWINDANGLE_TRUE.PNG" DiskId="1" Guid="79E9249E-C498-4BE1-B621-926BBEAAC346">
+                                <File Id="CLASSIC_CHWINDANGLE_TRUE.PNG" Name="classic_CHwindangle_true.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\smallBitmaps\classic_CHwindangle_true.png" />
+                            </Component>
+                            <Component Id="CLASSIC_CLOCK.PNG" DiskId="1" Guid="61D97746-2A1E-4E76-919E-C2BEC6F7E2C1">
+                                <File Id="CLASSIC_CLOCK.PNG" Name="classic_clock.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\smallBitmaps\classic_clock.png" />
+                            </Component>
+                            <Component Id="CLASSIC_COMPASS.PNG" DiskId="1" Guid="B9F9D637-D06C-411B-999A-582727689666">
+                                <File Id="CLASSIC_COMPASS.PNG" Name="classic_compass.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\smallBitmaps\classic_compass.png" />
+                            </Component>
+                            <Component Id="CLASSIC_GRWIND.PNG" DiskId="1" Guid="E0BF33C5-6E9C-4430-8F94-17F87E0B0328">
+                                <File Id="CLASSIC_GRWIND.PNG" Name="classic_grwind.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\smallBitmaps\classic_grwind.png" />
+                            </Component>
+                            <Component Id="CLASSIC_RUDDER.PNG" DiskId="1" Guid="05C80F12-BCCC-45BF-9F44-48C6C65332FD">
+                                <File Id="CLASSIC_RUDDER.PNG" Name="classic_rudder.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\smallBitmaps\classic_rudder.png" />
+                            </Component>
+                            <Component Id="CLASSIC_WINDANGLE_APP.PNG" DiskId="1" Guid="BB2E566B-EA38-4BE4-8FEF-2BA012DE56E0">
+                                <File Id="CLASSIC_WINDANGLE_APP.PNG" Name="classic_windangle_app.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\smallBitmaps\classic_windangle_app.png" />
+                            </Component>
+                            <Component Id="CLASSIC_WINDANGLE_TRUE.PNG" DiskId="1" Guid="ED99F557-EAF8-4895-B99D-5940D47E697E">
+                                <File Id="CLASSIC_WINDANGLE_TRUE.PNG" Name="classic_windangle_true.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\smallBitmaps\classic_windangle_true.png" />
+                            </Component>
+                            <Component Id="TWDIR_DIFF.PNG" DiskId="1" Guid="0384446C-DADB-4E3C-815D-7AF888569A3E">
+                                <File Id="TWDIR_DIFF.PNG" Name="twdir_diff.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\smallBitmaps\twdir_diff.png" />
+                            </Component>
+                            <Component Id="_300_300.PNG" DiskId="1" Guid="2DEC152A-F51D-47D4-97FA-370508FD2B73">
+                                <File Id="_300_300.PNG" Name="_300_300.png" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\images\smallBitmaps\_300_300.png" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="SPEECH" Name="speech">
+                        <Component Id="_0.MP3" DiskId="1" Guid="3494621F-2121-41BB-8A5E-A3D48F0B5F9D">
+                            <File Id="_0.MP3" Name="0.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\0.mp3" />
+                        </Component>
+                        <Component Id="_1.MP3" DiskId="1" Guid="9D0EF758-5767-4C67-B7F5-99B51B7DC7B6">
+                            <File Id="_1.MP3" Name="1.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\1.mp3" />
+                        </Component>
+                        <Component Id="_10.MP3" DiskId="1" Guid="E965FF29-158C-42D8-AA37-7B7480AA1E8E">
+                            <File Id="_10.MP3" Name="10.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\10.mp3" />
+                        </Component>
+                        <Component Id="_100.MP3" DiskId="1" Guid="307621A1-78F2-4653-B9B6-5511162EE8BF">
+                            <File Id="_100.MP3" Name="100.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\100.mp3" />
+                        </Component>
+                        <Component Id="_11.MP3" DiskId="1" Guid="79CEDAE5-92EA-4282-AB22-5E4DBC6E77E9">
+                            <File Id="_11.MP3" Name="11.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\11.mp3" />
+                        </Component>
+                        <Component Id="_12.MP3" DiskId="1" Guid="E020BADA-452A-445F-9B49-95BB4490C952">
+                            <File Id="_12.MP3" Name="12.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\12.mp3" />
+                        </Component>
+                        <Component Id="_13.MP3" DiskId="1" Guid="1F3F36C1-FC95-4EC7-981A-18200EF84CC9">
+                            <File Id="_13.MP3" Name="13.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\13.mp3" />
+                        </Component>
+                        <Component Id="_14.MP3" DiskId="1" Guid="EBEAE8AC-0564-4382-9BCF-4A4C1894AD3A">
+                            <File Id="_14.MP3" Name="14.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\14.mp3" />
+                        </Component>
+                        <Component Id="_15.MP3" DiskId="1" Guid="6F05FDFF-031D-44BB-BC96-2FBCE5F712FF">
+                            <File Id="_15.MP3" Name="15.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\15.mp3" />
+                        </Component>
+                        <Component Id="_16.MP3" DiskId="1" Guid="D713770D-3BBC-4780-85F0-52585CD0C21F">
+                            <File Id="_16.MP3" Name="16.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\16.mp3" />
+                        </Component>
+                        <Component Id="_17.MP3" DiskId="1" Guid="39F9CB97-83A5-49BF-A718-C1F0AB5727CD">
+                            <File Id="_17.MP3" Name="17.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\17.mp3" />
+                        </Component>
+                        <Component Id="_18.MP3" DiskId="1" Guid="5599CA9C-FEA7-401B-A90F-5804BEA60201">
+                            <File Id="_18.MP3" Name="18.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\18.mp3" />
+                        </Component>
+                        <Component Id="_19.MP3" DiskId="1" Guid="4A777DB2-1A9B-4A34-8EC0-134FAB260F9F">
+                            <File Id="_19.MP3" Name="19.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\19.mp3" />
+                        </Component>
+                        <Component Id="_2.MP3" DiskId="1" Guid="74940EBB-C34F-4457-A404-77EBF5EE9589">
+                            <File Id="_2.MP3" Name="2.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\2.mp3" />
+                        </Component>
+                        <Component Id="_20.MP3" DiskId="1" Guid="C17BECFE-7B1A-4BE6-B2F9-43E8F1988B45">
+                            <File Id="_20.MP3" Name="20.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\20.mp3" />
+                        </Component>
+                        <Component Id="_200.MP3" DiskId="1" Guid="009040B3-2006-43A4-8E08-7D39354687F7">
+                            <File Id="_200.MP3" Name="200.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\200.mp3" />
+                        </Component>
+                        <Component Id="_3.MP3" DiskId="1" Guid="62FC29A2-1283-414B-A5EC-1A2ECC227F6E">
+                            <File Id="_3.MP3" Name="3.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\3.mp3" />
+                        </Component>
+                        <Component Id="_30.MP3" DiskId="1" Guid="17FFEF95-4C83-47B4-BD68-C9BEF289C3A5">
+                            <File Id="_30.MP3" Name="30.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\30.mp3" />
+                        </Component>
+                        <Component Id="_300.MP3" DiskId="1" Guid="0E6BED91-E629-4B31-A8D2-8263B47877F3">
+                            <File Id="_300.MP3" Name="300.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\300.mp3" />
+                        </Component>
+                        <Component Id="_4.MP3" DiskId="1" Guid="5FEEE78C-A53E-4166-A754-4C261A78DF68">
+                            <File Id="_4.MP3" Name="4.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\4.mp3" />
+                        </Component>
+                        <Component Id="_40.MP3" DiskId="1" Guid="ED73E6D5-F213-48B8-9801-A67DB5EFD9BB">
+                            <File Id="_40.MP3" Name="40.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\40.mp3" />
+                        </Component>
+                        <Component Id="_400.MP3" DiskId="1" Guid="77929795-2120-48DD-92D6-CBBC2BAC2009">
+                            <File Id="_400.MP3" Name="400.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\400.mp3" />
+                        </Component>
+                        <Component Id="_5.MP3" DiskId="1" Guid="6DC81829-AD45-46A0-8E18-EF4218467ECC">
+                            <File Id="_5.MP3" Name="5.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\5.mp3" />
+                        </Component>
+                        <Component Id="_50.MP3" DiskId="1" Guid="F48F047A-F6AF-46C1-84F7-AA42E55C1C61">
+                            <File Id="_50.MP3" Name="50.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\50.mp3" />
+                        </Component>
+                        <Component Id="_500.MP3" DiskId="1" Guid="21B93D31-F7E3-4106-A3FB-1F69584881F8">
+                            <File Id="_500.MP3" Name="500.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\500.mp3" />
+                        </Component>
+                        <Component Id="_6.MP3" DiskId="1" Guid="E89D1763-6BF2-41BB-B3D6-652278E240CD">
+                            <File Id="_6.MP3" Name="6.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\6.mp3" />
+                        </Component>
+                        <Component Id="_60.MP3" DiskId="1" Guid="EC7C6FA8-7A30-45AA-A0C2-385BBA623A08">
+                            <File Id="_60.MP3" Name="60.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\60.mp3" />
+                        </Component>
+                        <Component Id="_600.MP3" DiskId="1" Guid="93B0C75F-C6F3-4BB7-8414-DFB275EA958F">
+                            <File Id="_600.MP3" Name="600.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\600.mp3" />
+                        </Component>
+                        <Component Id="_7.MP3" DiskId="1" Guid="D13D097B-21A6-4F08-88FA-45212D192259">
+                            <File Id="_7.MP3" Name="7.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\7.mp3" />
+                        </Component>
+                        <Component Id="_70.MP3" DiskId="1" Guid="93C48ED0-7E29-4683-97F5-C3D00FF66836">
+                            <File Id="_70.MP3" Name="70.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\70.mp3" />
+                        </Component>
+                        <Component Id="_700.MP3" DiskId="1" Guid="63676B54-5768-467E-A1FA-EC248E04E9AE">
+                            <File Id="_700.MP3" Name="700.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\700.mp3" />
+                        </Component>
+                        <Component Id="_8.MP3" DiskId="1" Guid="C71B8E82-8510-41C4-83E1-CE1B8BF614C0">
+                            <File Id="_8.MP3" Name="8.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\8.mp3" />
+                        </Component>
+                        <Component Id="_80.MP3" DiskId="1" Guid="C57EA229-72B7-4246-BDD4-C7C3BA41BAE1">
+                            <File Id="_80.MP3" Name="80.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\80.mp3" />
+                        </Component>
+                        <Component Id="_800.MP3" DiskId="1" Guid="BD4D837C-8E99-4B70-A5D1-3E085633B67E">
+                            <File Id="_800.MP3" Name="800.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\800.mp3" />
+                        </Component>
+                        <Component Id="_9.MP3" DiskId="1" Guid="533862AD-1E24-4EC0-9E59-B287375DDE2B">
+                            <File Id="_9.MP3" Name="9.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\9.mp3" />
+                        </Component>
+                        <Component Id="_90.MP3" DiskId="1" Guid="DB8110AA-D0B7-4AD4-9F99-156F4AED15FE">
+                            <File Id="_90.MP3" Name="90.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\90.mp3" />
+                        </Component>
+                        <Component Id="_900.MP3" DiskId="1" Guid="8FA60B75-06BE-4551-82C0-09584108DAEB">
+                            <File Id="_900.MP3" Name="900.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\900.mp3" />
+                        </Component>
+                        <Component Id="AIS_VESSEL_WILL_BE_IN.MP3" DiskId="1" Guid="A2489690-E231-47C9-B543-A8FCA717FCCF">
+                            <File Id="AIS_VESSEL_WILL_BE_IN.MP3" Name="AIS_Vessel_will_be_in.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\AIS_Vessel_will_be_in.mp3" />
+                        </Component>
+                        <Component Id="ANCHOR.MP3" DiskId="1" Guid="673BFCAF-D823-48D9-9B85-653362E37953">
+                            <File Id="ANCHOR.MP3" Name="anchor.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\anchor.mp3" />
+                        </Component>
+                        <Component Id="BEAUFORT.MP3" DiskId="1" Guid="D1B4CB2F-FF30-4E05-B5C6-E3EC6DBDE7AD">
+                            <File Id="BEAUFORT.MP3" Name="beaufort.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\beaufort.mp3" />
+                        </Component>
+                        <Component Id="BOAT_SPEED_IS_.MP3" DiskId="1" Guid="425E193F-A29E-499C-B4E6-A2D2305066FC">
+                            <File Id="BOAT_SPEED_IS_.MP3" Name="boat_speed_is_.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\boat_speed_is_.mp3" />
+                        </Component>
+                        <Component Id="CELSIUS.MP3" DiskId="1" Guid="94F43412-84B2-4488-BAE9-9FA331701344">
+                            <File Id="CELSIUS.MP3" Name="celsius.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\celsius.mp3" />
+                        </Component>
+                        <Component Id="CROSS_TRACK_ERROR_IS.MP3" DiskId="1" Guid="7EC41F6B-16A6-4AD3-B22C-7604DDF88077">
+                            <File Id="CROSS_TRACK_ERROR_IS.MP3" Name="cross_track_error_is.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\cross_track_error_is.mp3" />
+                        </Component>
+                        <Component Id="CURRENT_DEPTH_IS_.MP3" DiskId="1" Guid="1DC0AC1F-5CE9-41B3-8902-475274028EEE">
+                            <File Id="CURRENT_DEPTH_IS_.MP3" Name="current_depth_is_.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\current_depth_is_.mp3" />
+                        </Component>
+                        <Component Id="DEGREE.MP3" DiskId="1" Guid="FFEC86B1-3A69-48DC-9BD3-0163F4F47433">
+                            <File Id="DEGREE.MP3" Name="degree.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\degree.mp3" />
+                        </Component>
+                        <Component Id="FAHRENHEIT.MP3" DiskId="1" Guid="0E09DD47-0CB2-4AFA-A4BB-493B6D8963C6">
+                            <File Id="FAHRENHEIT.MP3" Name="fahrenheit.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\fahrenheit.mp3" />
+                        </Component>
+                        <Component Id="FATHOM.MP3" DiskId="1" Guid="67C236E5-0D08-43CE-8552-439A2D3ADD74">
+                            <File Id="FATHOM.MP3" Name="fathom.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\fathom.mp3" />
+                        </Component>
+                        <Component Id="FEET.MP3" DiskId="1" Guid="FED2D62C-87C2-40A9-8E11-7DF5BBA384F2">
+                            <File Id="FEET.MP3" Name="feet.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\feet.mp3" />
+                        </Component>
+                        <Component Id="KEVLIN.MP3" DiskId="1" Guid="05E0C574-F24E-4559-8C91-1D2F1D9F4BCC">
+                            <File Id="KEVLIN.MP3" Name="kevlin.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\kevlin.mp3" />
+                        </Component>
+                        <Component Id="KILOMETER.MP3" DiskId="1" Guid="569A5847-C1CE-4B3F-B8A9-38EA1FAA7A25">
+                            <File Id="KILOMETER.MP3" Name="kilometer.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\kilometer.mp3" />
+                        </Component>
+                        <Component Id="KILOMETER_PER_HOUR.MP3" DiskId="1" Guid="270EC461-4643-4788-BA3E-EC535047FEC3">
+                            <File Id="KILOMETER_PER_HOUR.MP3" Name="kilometer_per_hour.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\kilometer_per_hour.mp3" />
+                        </Component>
+                        <Component Id="KNOTS.MP3" DiskId="1" Guid="519BD596-9101-4DB1-9E1E-DE8C70C043E8">
+                            <File Id="KNOTS.MP3" Name="knots.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\knots.mp3" />
+                        </Component>
+                        <Component Id="METER.MP3" DiskId="1" Guid="2BA39713-AC6A-4BD7-A17B-A5BC8EFF271E">
+                            <File Id="METER.MP3" Name="meter.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\meter.mp3" />
+                        </Component>
+                        <Component Id="METER_PER_SECUNDUM.MP3" DiskId="1" Guid="F6A24172-F04B-4F89-95A8-E0F4AD8D938B">
+                            <File Id="METER_PER_SECUNDUM.MP3" Name="meter_per_secundum.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\meter_per_secundum.mp3" />
+                        </Component>
+                        <Component Id="MILE.MP3" DiskId="1" Guid="8DE3F6B6-B945-4E7B-BA39-7F7822002B95">
+                            <File Id="MILE.MP3" Name="mile.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\mile.mp3" />
+                        </Component>
+                        <Component Id="MILES_PER_HOUR.MP3" DiskId="1" Guid="B2528DEB-8965-487A-8233-598D6AC005FC">
+                            <File Id="MILES_PER_HOUR.MP3" Name="miles_per_hour.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\miles_per_hour.mp3" />
+                        </Component>
+                        <Component Id="MINUS.MP3" DiskId="1" Guid="89ADEE7F-563F-4E31-B972-BF810C1BF426">
+                            <File Id="MINUS.MP3" Name="minus.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\minus.mp3" />
+                        </Component>
+                        <Component Id="NAUTICAL_MILE.MP3" DiskId="1" Guid="98F937E6-22AE-4AAA-A572-BB4CFA74B383">
+                            <File Id="NAUTICAL_MILE.MP3" Name="nautical_mile.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\nautical_mile.mp3" />
+                        </Component>
+                        <Component Id="NOT_VALID.MP3" DiskId="1" Guid="AD8F3899-5C26-4A7C-B38D-9A849F4F7167">
+                            <File Id="NOT_VALID.MP3" Name="not_valid.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\not_valid.mp3" />
+                        </Component>
+                        <Component Id="NO_CONNECTION.MP3" DiskId="1" Guid="59FF3F39-7758-4EEF-9AD1-C78F94233E8A">
+                            <File Id="NO_CONNECTION.MP3" Name="no_connection.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\no_connection.mp3" />
+                        </Component>
+                        <Component Id="NO_DATA.MP3" DiskId="1" Guid="BA29E163-2869-4541-B117-5C8A58AE83E7">
+                            <File Id="NO_DATA.MP3" Name="no_data.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\no_data.mp3" />
+                        </Component>
+                        <Component Id="POINT.MP3" DiskId="1" Guid="55381617-D528-41EB-8F14-0C935615C4CC">
+                            <File Id="POINT.MP3" Name="point.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\point.mp3" />
+                        </Component>
+                        <Component Id="SHIP_IS_TOO_CLOSE_.MP3" DiskId="1" Guid="C86A68E3-9391-434A-9A98-3E1642281D1F">
+                            <File Id="SHIP_IS_TOO_CLOSE_.MP3" Name="ship_is_too_close_.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\ship_is_too_close_.mp3" />
+                        </Component>
+                        <Component Id="WATER_DEPTH_CHANGED_DRAMATICALLY.MP3" DiskId="1" Guid="427818FF-1DB5-427F-8723-97C9C7C5B101">
+                            <File Id="WATER_DEPTH_CHANGED_DRAMATICALLY.MP3" Name="water_depth_changed_dramatically.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\water_depth_changed_dramatically.mp3" />
+                        </Component>
+                        <Component Id="WATER_DEPTH_IS_.MP3" DiskId="1" Guid="98E04B06-B159-47CB-AE32-DB2AE1E3A356">
+                            <File Id="WATER_DEPTH_IS_.MP3" Name="water_depth_is_.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\water_depth_is_.mp3" />
+                        </Component>
+                        <Component Id="WATER_TEMPERATURE_CHANGED_DRAMATICALLY.MP3" DiskId="1" Guid="827887A4-1B62-4805-8DAC-5B614CF48C92">
+                            <File Id="WATER_TEMPERATURE_CHANGED_DRAMATICALLY.MP3" Name="water_temperature_changed_dramatically.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\water_temperature_changed_dramatically.mp3" />
+                        </Component>
+                        <Component Id="WATER_TEMPERATURE_IS_.MP3" DiskId="1" Guid="D491E034-95AB-48B9-8050-B730AA6F12EB">
+                            <File Id="WATER_TEMPERATURE_IS_.MP3" Name="water_temperature_is_.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\water_temperature_is_.mp3" />
+                        </Component>
+                        <Component Id="WAYPOINT_DISTANCE_IS.MP3" DiskId="1" Guid="FC1FB2EF-AB7D-4677-8529-E652B0061597">
+                            <File Id="WAYPOINT_DISTANCE_IS.MP3" Name="waypoint_distance_is.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\waypoint_distance_is.mp3" />
+                        </Component>
+                        <Component Id="WIND_ANGLE_IS_.MP3" DiskId="1" Guid="2B912B61-A172-4EA8-93B3-63C593FD8936">
+                            <File Id="WIND_ANGLE_IS_.MP3" Name="wind_angle_is_.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\wind_angle_is_.mp3" />
+                        </Component>
+                        <Component Id="WIND_CHANGED_DRAMATICALLY.MP3" DiskId="1" Guid="575B1F57-5135-49CE-B901-5BAF844D3505">
+                            <File Id="WIND_CHANGED_DRAMATICALLY.MP3" Name="wind_changed_dramatically.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\wind_changed_dramatically.mp3" />
+                        </Component>
+                        <Component Id="WIND_DIRECTION_IS_.MP3" DiskId="1" Guid="69F496FB-BE14-423E-8350-C06F7195DBE6">
+                            <File Id="WIND_DIRECTION_IS_.MP3" Name="wind_direction_is_.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\wind_direction_is_.mp3" />
+                        </Component>
+                        <Component Id="WIND_DIRECTION_SHIFT_IS.MP3" DiskId="1" Guid="C9B30618-AA70-4D8B-9712-1792D47EF459">
+                            <File Id="WIND_DIRECTION_SHIFT_IS.MP3" Name="wind_direction_shift_is.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\wind_direction_shift_is.mp3" />
+                        </Component>
+                        <Component Id="WIND_SPEED_IS_.MP3" DiskId="1" Guid="2F842F89-49BC-40D9-AC2C-FC0CE35BC27E">
+                            <File Id="WIND_SPEED_IS_.MP3" Name="wind_speed_is_.mp3" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\assets\speech\wind_speed_is_.mp3" />
+                        </Component>
+                    </Directory>
+                </Directory>
+                <Directory Id="CONFIGS" Name="configs">
+                    <Component Id="ALARMS.XML" DiskId="1" Guid="B6E796D2-98F8-4532-A209-C314BC8FE826">
+                        <File Id="ALARMS.XML" Name="alarms.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\configs\alarms.xml" />
+                    </Component>
+                    <Component Id="DEMO.NMEA" DiskId="1" Guid="D539079B-75AF-451F-B323-50DA6B5963FF">
+                        <File Id="DEMO.NMEA" Name="demo.nmea" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\configs\demo.nmea" />
+                    </Component>
+                </Directory>
+                <Directory Id="LAYOUTS" Name="layouts">
+                    <Component Id="SHIP.LAYOUT" DiskId="1" Guid="748AD1DF-DA30-4713-930D-1942924B2DC0">
+                        <File Id="SHIP.LAYOUT" Name="ship.layout" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\layouts\ship.layout" />
+                    </Component>
+                    <Component Id="STOPWATCH.LAYOUT" DiskId="1" Guid="75A32D57-992B-4964-960A-F6B2CD61F159">
+                        <File Id="STOPWATCH.LAYOUT" Name="stopwatch.layout" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\layouts\stopwatch.layout" />
+                    </Component>
+                    <Component Id="WHEEL.LAYOUT" DiskId="1" Guid="A454B10F-614F-485F-8910-912BB870419F">
+                        <File Id="WHEEL.LAYOUT" Name="wheel.layout" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\layouts\wheel.layout" />
+                    </Component>
+                    <Directory Id="_1024_768" Name="1024_768">
+                        <Component Id="TEST1.LAYOUT" DiskId="1" Guid="9DD9AD43-3A3A-45E8-83C6-73FFD0E55C8E">
+                            <File Id="TEST1.LAYOUT" Name="test1.layout" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\layouts\1024_768\test1.layout" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="_1440_824" Name="1440_824">
+                        <Component Id="SHIP.LAYOUT_1" DiskId="1" Guid="7AAADDBD-1A1D-4757-B377-640C065ABCA3">
+                            <File Id="SHIP.LAYOUT_1" Name="ship.layout" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\layouts\1440_824\ship.layout" />
+                        </Component>
+                        <Component Id="STOPWATCH.LAYOUT_1" DiskId="1" Guid="E9D60432-702C-4F00-9DD1-E79A5A3981FA">
+                            <File Id="STOPWATCH.LAYOUT_1" Name="stopwatch.layout" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\layouts\1440_824\stopwatch.layout" />
+                        </Component>
+                        <Component Id="WHEEL.LAYOUT_1" DiskId="1" Guid="2FE791FE-77D0-485B-B309-5E2F52C7BC41">
+                            <File Id="WHEEL.LAYOUT_1" Name="wheel.layout" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\layouts\1440_824\wheel.layout" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="_1920_1080" Name="1920_1080">
+                        <Component Id="SHIP.LAYOUT_2" DiskId="1" Guid="7F858B76-D854-4D04-880D-3D987E12BFB1">
+                            <File Id="SHIP.LAYOUT_2" Name="ship.layout" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\layouts\1920_1080\ship.layout" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="_800_600" Name="800_600">
+                        <Component Id="SHIP.LAYOUT_3" DiskId="1" Guid="F656519D-F715-4B06-AA76-40545B356A1A">
+                            <File Id="SHIP.LAYOUT_3" Name="ship.layout" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\layouts\800_600\ship.layout" />
+                        </Component>
+                        <Component Id="WHEEL.LAYOUT_2" DiskId="1" Guid="9001DD70-AE1C-4C71-959F-12E5136CB385">
+                            <File Id="WHEEL.LAYOUT_2" Name="wheel.layout" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\layouts\800_600\wheel.layout" />
+                        </Component>
+                    </Directory>
+                </Directory>
+                <Directory Id="META_INF" Name="META-INF">
+                    <Component Id="SIGNATURES.XML" DiskId="1" Guid="25F82CCD-2FCB-4356-9E8A-D2AF7714B3BF">
+                        <File Id="SIGNATURES.XML" Name="signatures.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\signatures.xml" />
+                    </Component>
+                    <Directory Id="AIR_1" Name="AIR">
+                        <Component Id="APPLICATION.XML" DiskId="1" Guid="A8C972D9-C83F-43FB-9C25-C613A0C82817">
+                            <File Id="APPLICATION.XML" Name="application.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\application.xml" />
+                        </Component>
+                        <Component Id="HASH" DiskId="1" Guid="5D4A4B75-7F13-4705-8B38-D2B5F9627A3F">
+                            <File Id="HASH" Name="hash" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\hash" />
+                        </Component>
+                        <Directory Id="EXTENSIONS" Name="extensions">
+                            <Directory Id="COM.QUETWO.ARDUINO.ARDUINOCONNECTOR" Name="com.quetwo.Arduino.ArduinoConnector">
+                                <Component Id="CATALOG.XML" DiskId="1" Guid="A0046858-86AA-45AE-A46F-73C5AC7BB165">
+                                    <File Id="CATALOG.XML" Name="catalog.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\com.quetwo.Arduino.ArduinoConnector\catalog.xml" />
+                                </Component>
+                                <Component Id="LIBRARY.SWF" DiskId="1" Guid="740E3930-2F9C-4919-9A12-F0DB72AA788D">
+                                    <File Id="LIBRARY.SWF" Name="library.swf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\com.quetwo.Arduino.ArduinoConnector\library.swf" />
+                                </Component>
+                                <Directory Id="META_INF_1" Name="META-INF">
+                                    <Directory Id="ANE" Name="ANE">
+                                        <Component Id="EXTENSION.XML" DiskId="1" Guid="553523C1-7C83-4060-AC98-6DA97A0EA4B1">
+                                            <File Id="EXTENSION.XML" Name="extension.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\com.quetwo.Arduino.ArduinoConnector\META-INF\ANE\extension.xml" />
+                                        </Component>
+                                        <Directory Id="WINDOWS_X86" Name="Windows-x86">
+                                            <Component Id="LIBRARY.SWF_1" DiskId="1" Guid="FDE399F6-7443-4C2E-A81E-44DA76E1E20A">
+                                                <File Id="LIBRARY.SWF_1" Name="library.swf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\com.quetwo.Arduino.ArduinoConnector\META-INF\ANE\Windows-x86\library.swf" />
+                                            </Component>
+                                            <Component Id="LIBSERIALANE.DLL" DiskId="1" Guid="D6B6C8B0-73DB-4E7E-8A13-379439447C7B">
+                                                <File Id="LIBSERIALANE.DLL" Name="libSerialANE.dll" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\com.quetwo.Arduino.ArduinoConnector\META-INF\ANE\Windows-x86\libSerialANE.dll" />
+                                            </Component>
+                                        </Directory>
+                                    </Directory>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="COM.SEAMANTEC.HWKEYANE" Name="com.seamantec.hwKeyAne">
+                                <Component Id="CATALOG.XML_1" DiskId="1" Guid="D502D923-81E8-422D-9FF8-6814480884D9">
+                                    <File Id="CATALOG.XML_1" Name="catalog.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\com.seamantec.hwKeyAne\catalog.xml" />
+                                </Component>
+                                <Component Id="LIBRARY.SWF_2" DiskId="1" Guid="4A80957B-226E-4EA2-BCBF-5981E86B8A62">
+                                    <File Id="LIBRARY.SWF_2" Name="library.swf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\com.seamantec.hwKeyAne\library.swf" />
+                                </Component>
+                                <Directory Id="META_INF_2" Name="META-INF">
+                                    <Directory Id="ANE_1" Name="ANE">
+                                        <Component Id="EXTENSION.XML_1" DiskId="1" Guid="50A3FC38-026C-4811-9A69-6763A5F8BFCC">
+                                            <File Id="EXTENSION.XML_1" Name="extension.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\com.seamantec.hwKeyAne\META-INF\ANE\extension.xml" />
+                                        </Component>
+                                        <Directory Id="WINDOWS_X86_1" Name="Windows-x86">
+                                            <Component Id="HWKEYANE.DLL" DiskId="1" Guid="E5921982-06EE-4614-8C21-5E9942FB0D5F">
+                                                <File Id="HWKEYANE.DLL" Name="hwKeyAne.dll" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\com.seamantec.hwKeyAne\META-INF\ANE\Windows-x86\hwKeyAne.dll" />
+                                            </Component>
+                                            <Component Id="LIBRARY.SWF_3" DiskId="1" Guid="8CFFF7CE-5998-4ADB-B8F9-84E7E28AE7C8">
+                                                <File Id="LIBRARY.SWF_3" Name="library.swf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\com.seamantec.hwKeyAne\META-INF\ANE\Windows-x86\library.swf" />
+                                            </Component>
+                                        </Directory>
+                                    </Directory>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="ORG.LOG5F.AIR.EXTENSIONS.MOUSE.NATIVEMOUSE" Name="org.log5f.air.extensions.mouse.NativeMouse">
+                                <Component Id="CATALOG.XML_2" DiskId="1" Guid="026DDB8D-5640-4D22-8A70-8B12C39B0B96">
+                                    <File Id="CATALOG.XML_2" Name="catalog.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\org.log5f.air.extensions.mouse.NativeMouse\catalog.xml" />
+                                </Component>
+                                <Component Id="DESIGN.XML" DiskId="1" Guid="1D5D27F0-2709-4BCB-89B3-F7D855EAB708">
+                                    <File Id="DESIGN.XML" Name="design.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\org.log5f.air.extensions.mouse.NativeMouse\design.xml" />
+                                </Component>
+                                <Component Id="EXTENSION.XML_2" DiskId="1" Guid="5BEC612F-7925-41BE-9D1A-04F0ED1E4E40">
+                                    <File Id="EXTENSION.XML_2" Name="extension.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\org.log5f.air.extensions.mouse.NativeMouse\extension.xml" />
+                                </Component>
+                                <Component Id="LIBRARY.SWF_4" DiskId="1" Guid="3F444B1B-BB2B-4D47-AE6B-E051DB598053">
+                                    <File Id="LIBRARY.SWF_4" Name="library.swf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\org.log5f.air.extensions.mouse.NativeMouse\library.swf" />
+                                </Component>
+                                <Component Id="MANIFEST.XML" DiskId="1" Guid="4D7CF931-E1F4-468C-B2FA-EDF0326085D5">
+                                    <File Id="MANIFEST.XML" Name="manifest.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\org.log5f.air.extensions.mouse.NativeMouse\manifest.xml" />
+                                </Component>
+                                <Directory Id="META_INF_3" Name="META-INF">
+                                    <Directory Id="ANE_2" Name="ANE">
+                                        <Component Id="EXTENSION.XML_3" DiskId="1" Guid="2B2EA982-FC47-4367-95EF-B3DA3B37B122">
+                                            <File Id="EXTENSION.XML_3" Name="extension.xml" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\org.log5f.air.extensions.mouse.NativeMouse\META-INF\ANE\extension.xml" />
+                                        </Component>
+                                        <Directory Id="WINDOWS_X86_2" Name="Windows-x86">
+                                            <Component Id="LIBNATIVEMOUSEWIN.DLL" DiskId="1" Guid="9AD4DEEF-C35F-4C77-839F-627E6B5982BA">
+                                                <File Id="LIBNATIVEMOUSEWIN.DLL" Name="libNativeMouseWin.dll" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\org.log5f.air.extensions.mouse.NativeMouse\META-INF\ANE\Windows-x86\libNativeMouseWin.dll" />
+                                            </Component>
+                                            <Component Id="LIBRARY.SWF_5" DiskId="1" Guid="AADE1E40-48E5-4CDD-A0D7-4080048061B5">
+                                                <File Id="LIBRARY.SWF_5" Name="library.swf" Source="Users\pepusz\Documents\GitHub\sailing\air\bin-debug\air\META-INF\AIR\extensions\org.log5f.air.extensions.mouse.NativeMouse\META-INF\ANE\Windows-x86\library.swf" />
+                                            </Component>
+                                        </Directory>
+                                    </Directory>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                </Directory>
+            </Directory>
+        </Directory>
+        <Feature Id="DefaultFeature" Title="Main Feature" Level="1">
+            <ComponentRef Id="AIR.SWF" />
+            <ComponentRef Id="EDO_INSTRUMENTS.EXE" />
+            <ComponentRef Id="MIMETYPE" />
+            <ComponentRef Id="ADOBE_AIR.DLL" />
+            <ComponentRef Id="ADOBE_AIR.VCH" />
+            <ComponentRef Id="ADOBECP.DLL" />
+            <ComponentRef Id="ADOBECP.VCH" />
+            <ComponentRef Id="ADOBECP15.DLL" />
+            <ComponentRef Id="CAPTIVEAPPENTRY.EXE" />
+            <ComponentRef Id="NPSWF32.DLL" />
+            <ComponentRef Id="WEBKIT.DLL" />
+            <ComponentRef Id="LGPL_LICENSE.TXT" />
+            <ComponentRef Id="NOTICE_WEBKIT.TXT" />
+            <ComponentRef Id="ALERT1___COPY.MP3" />
+            <ComponentRef Id="ALERT1.MP3" />
+            <ComponentRef Id="ALERT2.MP3" />
+            <ComponentRef Id="LOADING.PNG" />
+            <ComponentRef Id="ICON_016.PNG" />
+            <ComponentRef Id="ICON_032.PNG" />
+            <ComponentRef Id="ICON_048.PNG" />
+            <ComponentRef Id="ICON_128.PNG" />
+            <ComponentRef Id="ICON_256.PNG" />
+            <ComponentRef Id="ICON_512.PNG" />
+            <ComponentRef Id="AMBLE_BOLD.TTF" />
+            <ComponentRef Id="AMBLE_BOLDITALIC.TTF" />
+            <ComponentRef Id="AMBLE_ITALIC.TTF" />
+            <ComponentRef Id="AMBLE_LIGHT.TTF" />
+            <ComponentRef Id="AMBLE_LIGHTCONDENSED.TTF" />
+            <ComponentRef Id="AMBLE_LIGHTCONDENSEDITALIC.TTF" />
+            <ComponentRef Id="AMBLE_LIGHTITALIC.TTF" />
+            <ComponentRef Id="AMBLE_REGULAR.TTF" />
+            <ComponentRef Id="DIGITAL_EDO_PR.TTF" />
+            <ComponentRef Id="DIGITAL_JANI_ITALIC.TTF" />
+            <ComponentRef Id="DIGITAL_JANI.TTF" />
+            <ComponentRef Id="DIGITAL_JANI1_ITALIC.TTF" />
+            <ComponentRef Id="DIGITAL_JANI1.TTF" />
+            <ComponentRef Id="DIGITAL_REGULAR.TTF" />
+            <ComponentRef Id="LIBERATIONSANS_BOLD.TTF" />
+            <ComponentRef Id="LIBERATIONSANS_BOLDITALIC.TTF" />
+            <ComponentRef Id="LIBERATIONSANS_ITALIC.TTF" />
+            <ComponentRef Id="LIBERATIONSANS_REGULAR.TTF" />
+            <ComponentRef Id="SANSATION_BOLD.TTF" />
+            <ComponentRef Id="SANSATION_BOLD_ITALIC.TTF" />
+            <ComponentRef Id="SANSATION_ITALIC.TTF" />
+            <ComponentRef Id="SANSATION_LIGHT.TTF" />
+            <ComponentRef Id="SANSATION_LIGHT_ITALIC.TTF" />
+            <ComponentRef Id="SANSATION_REGULAR.TTF" />
+            <ComponentRef Id="BELL_BUT.MP3" />
+            <ComponentRef Id="BELL_BUT2.MP3" />
+            <ComponentRef Id="DISALERT.MP3" />
+            <ComponentRef Id="IDG_BANG.MP3" />
+            <ComponentRef Id="POISE_XRIKAZEN.MP3" />
+            <ComponentRef Id="SUBMARIN_BRUCE_NE_7485_HIFI.MP3" />
+            <ComponentRef Id="SUBMARINE.MP3" />
+            <ComponentRef Id="S_BAINER.MP3" />
+            <ComponentRef Id="S_BAINER2.MP3" />
+            <ComponentRef Id="WOBBELO.MP3" />
+            <ComponentRef Id="GREEN_TICK.PNG" />
+            <ComponentRef Id="GREY_ICON.PNG" />
+            <ComponentRef Id="NEW.PNG" />
+            <ComponentRef Id="SHIP.JPEG" />
+            <ComponentRef Id="SHIP.PNG" />
+            <ComponentRef Id="SPEECH_ENABLED.PNG" />
+            <ComponentRef Id="VOLUME_ENABLED.PNG" />
+            <ComponentRef Id="VOLUME_MUTED.PNG" />
+            <ComponentRef Id="_1358886680_SHINE_14.PNG" />
+            <ComponentRef Id="_1358886698_STOCKS.PNG" />
+            <ComponentRef Id="_1358886698_STOCKS_VERTICAL.PNG" />
+            <ComponentRef Id="AIS.PNG" />
+            <ComponentRef Id="AISMAP.PNG" />
+            <ComponentRef Id="BADGE_BG.PNG" />
+            <ComponentRef Id="BAR_IMAGE.PNG" />
+            <ComponentRef Id="BG1.PNG" />
+            <ComponentRef Id="CONTROLBAR_BTN0.PNG" />
+            <ComponentRef Id="CONTROLBAR_BTN1.PNG" />
+            <ComponentRef Id="CONTROLBAR_BTN2.PNG" />
+            <ComponentRef Id="CONTROLBAR_BTN3.PNG" />
+            <ComponentRef Id="DEFAULTDESKTOP_.PNG" />
+            <ComponentRef Id="GRAPH_BG.PNG" />
+            <ComponentRef Id="GRAPH_SHADOW.PNG" />
+            <ComponentRef Id="GRAY_BUTTON_BG.PNG" />
+            <ComponentRef Id="GRAY_BUTTON_BG_OVER.PNG" />
+            <ComponentRef Id="GRZOOM_BTN0.PNG" />
+            <ComponentRef Id="GRZOOM_BTN1.PNG" />
+            <ComponentRef Id="GRZOOM_BTN2.PNG" />
+            <ComponentRef Id="GRZOOM_BTN3.PNG" />
+            <ComponentRef Id="ICO_NAVIGATING.PNG" />
+            <ComponentRef Id="ICO_RACING.PNG" />
+            <ComponentRef Id="ICO_SAILING.PNG" />
+            <ComponentRef Id="INPUTFIELD.PNG" />
+            <ComponentRef Id="LAYOUTSW_BG.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN0.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN0_BAL.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN0_JOBB.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN1.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN1_BAL.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN1_JOBB.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN2.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN2_BAL.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN2_JOBB.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN3.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN3_BAL.PNG" />
+            <ComponentRef Id="LAYOUTSW_BTN3_JOBB.PNG" />
+            <ComponentRef Id="LIC_KEY_ICO.PNG" />
+            <ComponentRef Id="LOGO.PNG" />
+            <ComponentRef Id="POLAR_SETTINGS_BG.PNG" />
+            <ComponentRef Id="SETTINGS_BTN0.PNG" />
+            <ComponentRef Id="SETTINGS_BTN1.PNG" />
+            <ComponentRef Id="SETTINGS_LONGBTN0.PNG" />
+            <ComponentRef Id="SETTINGS_LONGBTN1.PNG" />
+            <ComponentRef Id="WINDOW_RESIZE.PNG" />
+            <ComponentRef Id="AIRCRAFT.PNG" />
+            <ComponentRef Id="AISINFOBG.PNG" />
+            <ComponentRef Id="BASESTATION.PNG" />
+            <ComponentRef Id="CARGO_STOP.PNG" />
+            <ComponentRef Id="CARGO_VESSEL.PNG" />
+            <ComponentRef Id="CLOSESTATE.PNG" />
+            <ComponentRef Id="OPENAISITEMBG.PNG" />
+            <ComponentRef Id="OPENSTATE.PNG" />
+            <ComponentRef Id="PASSENGER_STOP.PNG" />
+            <ComponentRef Id="PASSENGER_VESSEL.PNG" />
+            <ComponentRef Id="SAIL_STOP.PNG" />
+            <ComponentRef Id="SAIL_VESSEL.PNG" />
+            <ComponentRef Id="UNKNOWN_STOP.PNG" />
+            <ComponentRef Id="UNKNOWN_VESSEL.PNG" />
+            <ComponentRef Id="ALARMLIST_FADE.PNG" />
+            <ComponentRef Id="ALARMLIST_FRAME.PNG" />
+            <ComponentRef Id="ALARMLIST_FRAME_BG.PNG" />
+            <ComponentRef Id="ALARMLIST_FRAME_BOTTOM.PNG" />
+            <ComponentRef Id="ALARMLIST_FRAME_LEFT.PNG" />
+            <ComponentRef Id="ALARMLIST_FRAME_RIGHT.PNG" />
+            <ComponentRef Id="ALARMLIST_FRAME_TOP.PNG" />
+            <ComponentRef Id="ALARM_OFF.PNG" />
+            <ComponentRef Id="ALARM_ON.PNG" />
+            <ComponentRef Id="ALERT_BADGE.PNG" />
+            <ComponentRef Id="BTN1_DOWN.PNG" />
+            <ComponentRef Id="BTN1_UP.PNG" />
+            <ComponentRef Id="CSUSZ_BAL_FEKETE.PNG" />
+            <ComponentRef Id="CSUSZ_BAL_PIROS.PNG" />
+            <ComponentRef Id="CSUSZ_JOBB_FEKETE.PNG" />
+            <ComponentRef Id="CSUSZ_JOBB_PIROS.PNG" />
+            <ComponentRef Id="FRAME_MASK.PNG" />
+            <ComponentRef Id="GRAPHW_BOTTOM.PNG" />
+            <ComponentRef Id="GRAPHW_BOTTOMLEFT.PNG" />
+            <ComponentRef Id="GRAPHW_BOTTOMRIGHT.PNG" />
+            <ComponentRef Id="GRAPHW_CLOSE_DOWN.PNG" />
+            <ComponentRef Id="GRAPHW_CLOSE_UP.PNG" />
+            <ComponentRef Id="GRAPHW_LEFT.PNG" />
+            <ComponentRef Id="GRAPHW_RIGHT.PNG" />
+            <ComponentRef Id="GRAPHW_TOP.PNG" />
+            <ComponentRef Id="GRAPHW_TOPLEFT.PNG" />
+            <ComponentRef Id="GRAPHW_TOPRIGHT.PNG" />
+            <ComponentRef Id="GRAPHX.PNG" />
+            <ComponentRef Id="INFO_BADGE.PNG" />
+            <ComponentRef Id="LIST_ELEMENT.PNG" />
+            <ComponentRef Id="MARKER_ACTUAL.PNG" />
+            <ComponentRef Id="SLIDER_BG.PNG" />
+            <ComponentRef Id="SLIDER_BL.PNG" />
+            <ComponentRef Id="SLIDER_BL_END.PNG" />
+            <ComponentRef Id="SLIDER_KNOB.PNG" />
+            <ComponentRef Id="SLIDER_RED.PNG" />
+            <ComponentRef Id="SLIDER_RED_END.PNG" />
+            <ComponentRef Id="VOICE_OFF.PNG" />
+            <ComponentRef Id="VOICE_ON.PNG" />
+            <ComponentRef Id="WINDOW_BOTTOM.PNG" />
+            <ComponentRef Id="WINDOW_BOTTOMLEFT.PNG" />
+            <ComponentRef Id="WINDOW_BOTTOMRIGHT.PNG" />
+            <ComponentRef Id="WINDOW_CLOSE_DOWN.PNG" />
+            <ComponentRef Id="WINDOW_CLOSE_UP.PNG" />
+            <ComponentRef Id="WINDOW_LEFT.PNG" />
+            <ComponentRef Id="WINDOW_RIGHT.PNG" />
+            <ComponentRef Id="WINDOW_TOP.PNG" />
+            <ComponentRef Id="WINDOW_TOPLEFT.PNG" />
+            <ComponentRef Id="WINDOW_TOPRIGHT.PNG" />
+            <ComponentRef Id="ADD_BG.PNG" />
+            <ComponentRef Id="ADD_BTN_DOWN01.PNG" />
+            <ComponentRef Id="ADD_BTN_DOWN02.PNG" />
+            <ComponentRef Id="ADD_BTN_UP01.PNG" />
+            <ComponentRef Id="ADD_BTN_UP02.PNG" />
+            <ComponentRef Id="ADD_LESS_BTN01.PNG" />
+            <ComponentRef Id="ADD_LESS_BTN02.PNG" />
+            <ComponentRef Id="ADD_MORE_BTN01.PNG" />
+            <ComponentRef Id="ADD_MORE_BTN02.PNG" />
+            <ComponentRef Id="COUNTER_BG.PNG" />
+            <ComponentRef Id="DROPDOWN_01.PNG" />
+            <ComponentRef Id="DROPDOWN_02.PNG" />
+            <ComponentRef Id="LEDIT_CLOSEBTN01.PNG" />
+            <ComponentRef Id="LEDIT_CLOSEBTN02.PNG" />
+            <ComponentRef Id="LEDIT_RESIZEBTN01.PNG" />
+            <ComponentRef Id="LEDIT_RESIZEBTN02.PNG" />
+            <ComponentRef Id="MENU_BTN01.PNG" />
+            <ComponentRef Id="MENU_BTN02.PNG" />
+            <ComponentRef Id="REPLAY_BACK01.PNG" />
+            <ComponentRef Id="REPLAY_BACK02.PNG" />
+            <ComponentRef Id="REPLAY_PLAY01.PNG" />
+            <ComponentRef Id="REPLAY_PLAY02.PNG" />
+            <ComponentRef Id="REPLAY_STOP01.PNG" />
+            <ComponentRef Id="REPLAY_STOP02.PNG" />
+            <ComponentRef Id="REPLAY_X01.PNG" />
+            <ComponentRef Id="REPLAY_X02.PNG" />
+            <ComponentRef Id="REPLAY_ZOOMIN01.PNG" />
+            <ComponentRef Id="REPLAY_ZOOMIN02.PNG" />
+            <ComponentRef Id="REPLAY_ZOOMOUT01.PNG" />
+            <ComponentRef Id="REPLAY_ZOOMOUT02.PNG" />
+            <ComponentRef Id="SWITCH_BG.PNG" />
+            <ComponentRef Id="SWITCH_KNOB.PNG" />
+            <ComponentRef Id="SWITCH_OFF.PNG" />
+            <ComponentRef Id="SWITCH_ON.PNG" />
+            <ComponentRef Id="TIMELINE.PNG" />
+            <ComponentRef Id="TIMELINE_END.PNG" />
+            <ComponentRef Id="TIMELINE_END_MORE.PNG" />
+            <ComponentRef Id="TIMELINE_START.PNG" />
+            <ComponentRef Id="TIMELINE_START_MORE.PNG" />
+            <ComponentRef Id="CLASSIC_CHWINDANGLE_APP.PNG" />
+            <ComponentRef Id="CLASSIC_CHWINDANGLE_TRUE.PNG" />
+            <ComponentRef Id="CLASSIC_CLOCK.PNG" />
+            <ComponentRef Id="CLASSIC_COMPASS.PNG" />
+            <ComponentRef Id="CLASSIC_GRWIND.PNG" />
+            <ComponentRef Id="CLASSIC_RUDDER.PNG" />
+            <ComponentRef Id="CLASSIC_WINDANGLE_APP.PNG" />
+            <ComponentRef Id="CLASSIC_WINDANGLE_TRUE.PNG" />
+            <ComponentRef Id="TWDIR_DIFF.PNG" />
+            <ComponentRef Id="_300_300.PNG" />
+            <ComponentRef Id="_0.MP3" />
+            <ComponentRef Id="_1.MP3" />
+            <ComponentRef Id="_10.MP3" />
+            <ComponentRef Id="_100.MP3" />
+            <ComponentRef Id="_11.MP3" />
+            <ComponentRef Id="_12.MP3" />
+            <ComponentRef Id="_13.MP3" />
+            <ComponentRef Id="_14.MP3" />
+            <ComponentRef Id="_15.MP3" />
+            <ComponentRef Id="_16.MP3" />
+            <ComponentRef Id="_17.MP3" />
+            <ComponentRef Id="_18.MP3" />
+            <ComponentRef Id="_19.MP3" />
+            <ComponentRef Id="_2.MP3" />
+            <ComponentRef Id="_20.MP3" />
+            <ComponentRef Id="_200.MP3" />
+            <ComponentRef Id="_3.MP3" />
+            <ComponentRef Id="_30.MP3" />
+            <ComponentRef Id="_300.MP3" />
+            <ComponentRef Id="_4.MP3" />
+            <ComponentRef Id="_40.MP3" />
+            <ComponentRef Id="_400.MP3" />
+            <ComponentRef Id="_5.MP3" />
+            <ComponentRef Id="_50.MP3" />
+            <ComponentRef Id="_500.MP3" />
+            <ComponentRef Id="_6.MP3" />
+            <ComponentRef Id="_60.MP3" />
+            <ComponentRef Id="_600.MP3" />
+            <ComponentRef Id="_7.MP3" />
+            <ComponentRef Id="_70.MP3" />
+            <ComponentRef Id="_700.MP3" />
+            <ComponentRef Id="_8.MP3" />
+            <ComponentRef Id="_80.MP3" />
+            <ComponentRef Id="_800.MP3" />
+            <ComponentRef Id="_9.MP3" />
+            <ComponentRef Id="_90.MP3" />
+            <ComponentRef Id="_900.MP3" />
+            <ComponentRef Id="AIS_VESSEL_WILL_BE_IN.MP3" />
+            <ComponentRef Id="ANCHOR.MP3" />
+            <ComponentRef Id="BEAUFORT.MP3" />
+            <ComponentRef Id="BOAT_SPEED_IS_.MP3" />
+            <ComponentRef Id="CELSIUS.MP3" />
+            <ComponentRef Id="CROSS_TRACK_ERROR_IS.MP3" />
+            <ComponentRef Id="CURRENT_DEPTH_IS_.MP3" />
+            <ComponentRef Id="DEGREE.MP3" />
+            <ComponentRef Id="FAHRENHEIT.MP3" />
+            <ComponentRef Id="FATHOM.MP3" />
+            <ComponentRef Id="FEET.MP3" />
+            <ComponentRef Id="KEVLIN.MP3" />
+            <ComponentRef Id="KILOMETER.MP3" />
+            <ComponentRef Id="KILOMETER_PER_HOUR.MP3" />
+            <ComponentRef Id="KNOTS.MP3" />
+            <ComponentRef Id="METER.MP3" />
+            <ComponentRef Id="METER_PER_SECUNDUM.MP3" />
+            <ComponentRef Id="MILE.MP3" />
+            <ComponentRef Id="MILES_PER_HOUR.MP3" />
+            <ComponentRef Id="MINUS.MP3" />
+            <ComponentRef Id="NAUTICAL_MILE.MP3" />
+            <ComponentRef Id="NOT_VALID.MP3" />
+            <ComponentRef Id="NO_CONNECTION.MP3" />
+            <ComponentRef Id="NO_DATA.MP3" />
+            <ComponentRef Id="POINT.MP3" />
+            <ComponentRef Id="SHIP_IS_TOO_CLOSE_.MP3" />
+            <ComponentRef Id="WATER_DEPTH_CHANGED_DRAMATICALLY.MP3" />
+            <ComponentRef Id="WATER_DEPTH_IS_.MP3" />
+            <ComponentRef Id="WATER_TEMPERATURE_CHANGED_DRAMATICALLY.MP3" />
+            <ComponentRef Id="WATER_TEMPERATURE_IS_.MP3" />
+            <ComponentRef Id="WAYPOINT_DISTANCE_IS.MP3" />
+            <ComponentRef Id="WIND_ANGLE_IS_.MP3" />
+            <ComponentRef Id="WIND_CHANGED_DRAMATICALLY.MP3" />
+            <ComponentRef Id="WIND_DIRECTION_IS_.MP3" />
+            <ComponentRef Id="WIND_DIRECTION_SHIFT_IS.MP3" />
+            <ComponentRef Id="WIND_SPEED_IS_.MP3" />
+            <ComponentRef Id="ALARMS.XML" />
+            <ComponentRef Id="DEMO.NMEA" />
+            <ComponentRef Id="SHIP.LAYOUT" />
+            <ComponentRef Id="STOPWATCH.LAYOUT" />
+            <ComponentRef Id="WHEEL.LAYOUT" />
+            <ComponentRef Id="TEST1.LAYOUT" />
+            <ComponentRef Id="SHIP.LAYOUT_1" />
+            <ComponentRef Id="STOPWATCH.LAYOUT_1" />
+            <ComponentRef Id="WHEEL.LAYOUT_1" />
+            <ComponentRef Id="SHIP.LAYOUT_2" />
+            <ComponentRef Id="SHIP.LAYOUT_3" />
+            <ComponentRef Id="WHEEL.LAYOUT_2" />
+            <ComponentRef Id="SIGNATURES.XML" />
+            <ComponentRef Id="APPLICATION.XML" />
+            <ComponentRef Id="HASH" />
+            <ComponentRef Id="CATALOG.XML" />
+            <ComponentRef Id="LIBRARY.SWF" />
+            <ComponentRef Id="EXTENSION.XML" />
+            <ComponentRef Id="LIBRARY.SWF_1" />
+            <ComponentRef Id="LIBSERIALANE.DLL" />
+            <ComponentRef Id="CATALOG.XML_1" />
+            <ComponentRef Id="LIBRARY.SWF_2" />
+            <ComponentRef Id="EXTENSION.XML_1" />
+            <ComponentRef Id="HWKEYANE.DLL" />
+            <ComponentRef Id="LIBRARY.SWF_3" />
+            <ComponentRef Id="CATALOG.XML_2" />
+            <ComponentRef Id="DESIGN.XML" />
+            <ComponentRef Id="EXTENSION.XML_2" />
+            <ComponentRef Id="LIBRARY.SWF_4" />
+            <ComponentRef Id="MANIFEST.XML" />
+            <ComponentRef Id="EXTENSION.XML_3" />
+            <ComponentRef Id="LIBNATIVEMOUSEWIN.DLL" />
+            <ComponentRef Id="LIBRARY.SWF_5" />
+        </Feature>
+        <UI />
+    </Product>
+</Wix>
